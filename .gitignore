@@ -50,3 +50,8 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/code/obj
+/code/bin/Debug/net6.0-windows
+.vs
+bin
+obj
