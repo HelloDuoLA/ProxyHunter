@@ -73,41 +73,41 @@
             this.tsbtn8 = new System.Windows.Forms.ToolStripButton();
             this.tctlMain = new System.Windows.Forms.TabControl();
             this.tpgSearch = new System.Windows.Forms.TabPage();
+            this.dgvSearch = new System.Windows.Forms.DataGridView();
             this.btnResult = new System.Windows.Forms.Button();
             this.btnEnd = new System.Windows.Forms.Button();
             this.btnContinue = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.tpInfo = new System.Windows.Forms.TabPage();
-            this.tpSet = new System.Windows.Forms.TabPage();
-            this.dgvSearch = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearchBox = new System.Windows.Forms.Button();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.btnBrowser = new System.Windows.Forms.Button();
+            this.dgvMessage = new System.Windows.Forms.DataGridView();
             this.btnVerify = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnImport = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.tpSet = new System.Windows.Forms.TabPage();
+            this.lblPort = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.btnProxyBox = new System.Windows.Forms.Button();
+            this.txtPort = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.dvgServer = new System.Windows.Forms.DataGridView();
             this.tp1_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp1_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp1_c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp1_c4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp1_c5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnBrowser = new System.Windows.Forms.Button();
             this.tp2_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp2_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp2_c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp2_c4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp2_c5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp2_c6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.btnSearchBox = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.txtPort = new System.Windows.Forms.TextBox();
-            this.btnProxyBox = new System.Windows.Forms.Button();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.lblPort = new System.Windows.Forms.Label();
             this.tp3_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp3_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp3_c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -118,11 +118,11 @@
             this.toolStrip1.SuspendLayout();
             this.tctlMain.SuspendLayout();
             this.tpgSearch.SuspendLayout();
-            this.tpInfo.SuspendLayout();
-            this.tpSet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tpInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMessage)).BeginInit();
+            this.tpSet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgServer)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -255,52 +255,52 @@
             // tsmiAdd
             // 
             this.tsmiAdd.Name = "tsmiAdd";
-            this.tsmiAdd.Size = new System.Drawing.Size(224, 26);
+            this.tsmiAdd.Size = new System.Drawing.Size(212, 26);
             this.tsmiAdd.Text = "增加代理";
             // 
             // tsmiDelete
             // 
             this.tsmiDelete.Name = "tsmiDelete";
-            this.tsmiDelete.Size = new System.Drawing.Size(224, 26);
+            this.tsmiDelete.Size = new System.Drawing.Size(212, 26);
             this.tsmiDelete.Text = "删除代理";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(209, 6);
             // 
             // tsmiImport
             // 
             this.tsmiImport.Name = "tsmiImport";
-            this.tsmiImport.Size = new System.Drawing.Size(224, 26);
+            this.tsmiImport.Size = new System.Drawing.Size(212, 26);
             this.tsmiImport.Text = "导入代理";
             // 
             // tsmiExport
             // 
             this.tsmiExport.Name = "tsmiExport";
-            this.tsmiExport.Size = new System.Drawing.Size(224, 26);
+            this.tsmiExport.Size = new System.Drawing.Size(212, 26);
             this.tsmiExport.Text = "导出代理";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(209, 6);
             // 
             // tsmiVerify
             // 
             this.tsmiVerify.Name = "tsmiVerify";
-            this.tsmiVerify.Size = new System.Drawing.Size(224, 26);
+            this.tsmiVerify.Size = new System.Drawing.Size(212, 26);
             this.tsmiVerify.Text = "验证代理";
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(209, 6);
             // 
             // tsmiBrowser
             // 
             this.tsmiBrowser.Name = "tsmiBrowser";
-            this.tsmiBrowser.Size = new System.Drawing.Size(224, 26);
+            this.tsmiBrowser.Size = new System.Drawing.Size(212, 26);
             this.tsmiBrowser.Text = "设置浏览器为代理";
             // 
             // tsmiServer
@@ -314,7 +314,7 @@
             // tsmiSet
             // 
             this.tsmiSet.Name = "tsmiSet";
-            this.tsmiSet.Size = new System.Drawing.Size(224, 26);
+            this.tsmiSet.Size = new System.Drawing.Size(152, 26);
             this.tsmiSet.Text = "设定代理";
             // 
             // tsmiSearchTap
@@ -477,6 +477,25 @@
             this.tpgSearch.Text = "搜索任务";
             this.tpgSearch.UseVisualStyleBackColor = true;
             // 
+            // dgvSearch
+            // 
+            this.dgvSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSearch.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSearch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tp1_c1,
+            this.tp1_c2,
+            this.tp1_c3,
+            this.tp1_c4,
+            this.tp1_c5});
+            this.dgvSearch.Location = new System.Drawing.Point(3, 6);
+            this.dgvSearch.Name = "dgvSearch";
+            this.dgvSearch.RowHeadersVisible = false;
+            this.dgvSearch.RowHeadersWidth = 51;
+            this.dgvSearch.RowTemplate.Height = 29;
+            this.dgvSearch.Size = new System.Drawing.Size(786, 317);
+            this.dgvSearch.TabIndex = 10;
+            // 
             // btnResult
             // 
             this.btnResult.Location = new System.Drawing.Point(406, 326);
@@ -528,7 +547,7 @@
             this.tpInfo.Controls.Add(this.btnSearchBox);
             this.tpInfo.Controls.Add(this.lblSearch);
             this.tpInfo.Controls.Add(this.btnBrowser);
-            this.tpInfo.Controls.Add(this.dataGridView2);
+            this.tpInfo.Controls.Add(this.dgvMessage);
             this.tpInfo.Controls.Add(this.btnVerify);
             this.tpInfo.Controls.Add(this.btnExport);
             this.tpInfo.Controls.Add(this.btnImport);
@@ -542,55 +561,59 @@
             this.tpInfo.Text = "代理信息";
             this.tpInfo.UseVisualStyleBackColor = true;
             // 
-            // tpSet
+            // txtSearch
             // 
-            this.tpSet.Controls.Add(this.lblPort);
-            this.tpSet.Controls.Add(this.lblAddress);
-            this.tpSet.Controls.Add(this.btnProxyBox);
-            this.tpSet.Controls.Add(this.txtPort);
-            this.tpSet.Controls.Add(this.txtAddress);
-            this.tpSet.Controls.Add(this.dataGridView3);
-            this.tpSet.Location = new System.Drawing.Point(4, 29);
-            this.tpSet.Name = "tpSet";
-            this.tpSet.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSet.Size = new System.Drawing.Size(792, 358);
-            this.tpSet.TabIndex = 2;
-            this.tpSet.Text = "代理服务器设置";
-            this.tpSet.UseVisualStyleBackColor = true;
-            this.tpSet.Click += new System.EventHandler(this.tabPage3_Click);
+            this.txtSearch.Location = new System.Drawing.Point(63, 6);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(630, 27);
+            this.txtSearch.TabIndex = 20;
             // 
-            // dgvSearch
+            // btnSearchBox
             // 
-            this.dgvSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSearch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tp1_c1,
-            this.tp1_c2,
-            this.tp1_c3,
-            this.tp1_c4,
-            this.tp1_c5});
-            this.dgvSearch.Location = new System.Drawing.Point(3, 6);
-            this.dgvSearch.Name = "dgvSearch";
-            this.dgvSearch.RowHeadersWidth = 51;
-            this.dgvSearch.RowTemplate.Height = 29;
-            this.dgvSearch.Size = new System.Drawing.Size(786, 317);
-            this.dgvSearch.TabIndex = 10;
+            this.btnSearchBox.Location = new System.Drawing.Point(699, 5);
+            this.btnSearchBox.Name = "btnSearchBox";
+            this.btnSearchBox.Size = new System.Drawing.Size(85, 29);
+            this.btnSearchBox.TabIndex = 19;
+            this.btnSearchBox.Text = "确定";
+            this.btnSearchBox.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // lblSearch
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(4, 9);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(54, 20);
+            this.lblSearch.TabIndex = 18;
+            this.lblSearch.Text = "搜索：";
+            // 
+            // btnBrowser
+            // 
+            this.btnBrowser.Location = new System.Drawing.Point(506, 326);
+            this.btnBrowser.Name = "btnBrowser";
+            this.btnBrowser.Size = new System.Drawing.Size(140, 29);
+            this.btnBrowser.TabIndex = 17;
+            this.btnBrowser.Text = "设置浏览器代理";
+            this.btnBrowser.UseVisualStyleBackColor = true;
+            // 
+            // dgvMessage
+            // 
+            this.dgvMessage.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMessage.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvMessage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMessage.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tp2_c1,
             this.tp2_c2,
             this.tp2_c3,
             this.tp2_c4,
             this.tp2_c5,
             this.tp2_c6});
-            this.dataGridView2.Location = new System.Drawing.Point(3, 38);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 29;
-            this.dataGridView2.Size = new System.Drawing.Size(786, 282);
-            this.dataGridView2.TabIndex = 16;
+            this.dgvMessage.Location = new System.Drawing.Point(3, 38);
+            this.dgvMessage.Name = "dgvMessage";
+            this.dgvMessage.RowHeadersVisible = false;
+            this.dgvMessage.RowHeadersWidth = 51;
+            this.dgvMessage.RowTemplate.Height = 29;
+            this.dgvMessage.Size = new System.Drawing.Size(786, 282);
+            this.dgvMessage.TabIndex = 16;
             // 
             // btnVerify
             // 
@@ -637,163 +660,22 @@
             this.btnAdd.Text = "增加代理";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // tpSet
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tp3_c1,
-            this.tp3_c2,
-            this.tp3_c3,
-            this.tp3_c4,
-            this.tp3_c5,
-            this.tp3_c6});
-            this.dataGridView3.Location = new System.Drawing.Point(3, 58);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 29;
-            this.dataGridView3.Size = new System.Drawing.Size(786, 297);
-            this.dataGridView3.TabIndex = 16;
-            // 
-            // tp1_c1
-            // 
-            this.tp1_c1.HeaderText = "起始地址";
-            this.tp1_c1.MinimumWidth = 6;
-            this.tp1_c1.Name = "tp1_c1";
-            this.tp1_c1.Width = 200;
-            // 
-            // tp1_c2
-            // 
-            this.tp1_c2.HeaderText = "终止地址";
-            this.tp1_c2.MinimumWidth = 6;
-            this.tp1_c2.Name = "tp1_c2";
-            this.tp1_c2.Width = 200;
-            // 
-            // tp1_c3
-            // 
-            this.tp1_c3.HeaderText = "端口";
-            this.tp1_c3.MinimumWidth = 6;
-            this.tp1_c3.Name = "tp1_c3";
-            this.tp1_c3.Width = 50;
-            // 
-            // tp1_c4
-            // 
-            this.tp1_c4.HeaderText = "状态";
-            this.tp1_c4.MinimumWidth = 6;
-            this.tp1_c4.Name = "tp1_c4";
-            // 
-            // tp1_c5
-            // 
-            this.tp1_c5.HeaderText = "创建时间";
-            this.tp1_c5.MinimumWidth = 6;
-            this.tp1_c5.Name = "tp1_c5";
-            this.tp1_c5.Width = 200;
-            // 
-            // btnBrowser
-            // 
-            this.btnBrowser.Location = new System.Drawing.Point(506, 326);
-            this.btnBrowser.Name = "btnBrowser";
-            this.btnBrowser.Size = new System.Drawing.Size(140, 29);
-            this.btnBrowser.TabIndex = 17;
-            this.btnBrowser.Text = "设置浏览器代理";
-            this.btnBrowser.UseVisualStyleBackColor = true;
-            // 
-            // tp2_c1
-            // 
-            this.tp2_c1.HeaderText = "服务器地址";
-            this.tp2_c1.MinimumWidth = 6;
-            this.tp2_c1.Name = "tp2_c1";
-            this.tp2_c1.Width = 200;
-            // 
-            // tp2_c2
-            // 
-            this.tp2_c2.HeaderText = "端口";
-            this.tp2_c2.MinimumWidth = 6;
-            this.tp2_c2.Name = "tp2_c2";
-            this.tp2_c2.Width = 50;
-            // 
-            // tp2_c3
-            // 
-            this.tp2_c3.HeaderText = "状态";
-            this.tp2_c3.MinimumWidth = 6;
-            this.tp2_c3.Name = "tp2_c3";
-            // 
-            // tp2_c4
-            // 
-            this.tp2_c4.HeaderText = "创建时间";
-            this.tp2_c4.MinimumWidth = 6;
-            this.tp2_c4.Name = "tp2_c4";
-            this.tp2_c4.Width = 150;
-            // 
-            // tp2_c5
-            // 
-            this.tp2_c5.HeaderText = "验证时间";
-            this.tp2_c5.MinimumWidth = 6;
-            this.tp2_c5.Name = "tp2_c5";
-            this.tp2_c5.Width = 150;
-            // 
-            // tp2_c6
-            // 
-            this.tp2_c6.HeaderText = "备注";
-            this.tp2_c6.MinimumWidth = 6;
-            this.tp2_c6.Name = "tp2_c6";
-            this.tp2_c6.Width = 150;
-            // 
-            // lblSearch
-            // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(4, 9);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(54, 20);
-            this.lblSearch.TabIndex = 18;
-            this.lblSearch.Text = "搜索：";
-            // 
-            // btnSearchBox
-            // 
-            this.btnSearchBox.Location = new System.Drawing.Point(699, 5);
-            this.btnSearchBox.Name = "btnSearchBox";
-            this.btnSearchBox.Size = new System.Drawing.Size(85, 29);
-            this.btnSearchBox.TabIndex = 19;
-            this.btnSearchBox.Text = "确定";
-            this.btnSearchBox.UseVisualStyleBackColor = true;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(63, 6);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(630, 27);
-            this.txtSearch.TabIndex = 20;
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Location = new System.Drawing.Point(3, 26);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(221, 27);
-            this.txtAddress.TabIndex = 17;
-            // 
-            // txtPort
-            // 
-            this.txtPort.Location = new System.Drawing.Point(230, 25);
-            this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(125, 27);
-            this.txtPort.TabIndex = 18;
-            // 
-            // btnProxyBox
-            // 
-            this.btnProxyBox.Location = new System.Drawing.Point(361, 24);
-            this.btnProxyBox.Name = "btnProxyBox";
-            this.btnProxyBox.Size = new System.Drawing.Size(94, 29);
-            this.btnProxyBox.TabIndex = 19;
-            this.btnProxyBox.Text = "确定";
-            this.btnProxyBox.UseVisualStyleBackColor = true;
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(3, 3);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(52, 20);
-            this.lblAddress.TabIndex = 20;
-            this.lblAddress.Text = "IP地址";
+            this.tpSet.Controls.Add(this.lblPort);
+            this.tpSet.Controls.Add(this.lblAddress);
+            this.tpSet.Controls.Add(this.btnProxyBox);
+            this.tpSet.Controls.Add(this.txtPort);
+            this.tpSet.Controls.Add(this.txtAddress);
+            this.tpSet.Controls.Add(this.dvgServer);
+            this.tpSet.Location = new System.Drawing.Point(4, 29);
+            this.tpSet.Name = "tpSet";
+            this.tpSet.Padding = new System.Windows.Forms.Padding(3);
+            this.tpSet.Size = new System.Drawing.Size(792, 358);
+            this.tpSet.TabIndex = 2;
+            this.tpSet.Text = "代理服务器设置";
+            this.tpSet.UseVisualStyleBackColor = true;
+            this.tpSet.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // lblPort
             // 
@@ -804,44 +686,175 @@
             this.lblPort.TabIndex = 21;
             this.lblPort.Text = "端口";
             // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Location = new System.Drawing.Point(3, 3);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(52, 20);
+            this.lblAddress.TabIndex = 20;
+            this.lblAddress.Text = "IP地址";
+            // 
+            // btnProxyBox
+            // 
+            this.btnProxyBox.Location = new System.Drawing.Point(361, 24);
+            this.btnProxyBox.Name = "btnProxyBox";
+            this.btnProxyBox.Size = new System.Drawing.Size(94, 29);
+            this.btnProxyBox.TabIndex = 19;
+            this.btnProxyBox.Text = "确定";
+            this.btnProxyBox.UseVisualStyleBackColor = true;
+            // 
+            // txtPort
+            // 
+            this.txtPort.Location = new System.Drawing.Point(230, 25);
+            this.txtPort.Name = "txtPort";
+            this.txtPort.Size = new System.Drawing.Size(125, 27);
+            this.txtPort.TabIndex = 18;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(3, 26);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(221, 27);
+            this.txtAddress.TabIndex = 17;
+            // 
+            // dvgServer
+            // 
+            this.dvgServer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dvgServer.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dvgServer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgServer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tp3_c1,
+            this.tp3_c2,
+            this.tp3_c3,
+            this.tp3_c4,
+            this.tp3_c5,
+            this.tp3_c6});
+            this.dvgServer.Location = new System.Drawing.Point(3, 58);
+            this.dvgServer.Name = "dvgServer";
+            this.dvgServer.RowHeadersVisible = false;
+            this.dvgServer.RowHeadersWidth = 51;
+            this.dvgServer.RowTemplate.Height = 29;
+            this.dvgServer.Size = new System.Drawing.Size(786, 297);
+            this.dvgServer.TabIndex = 16;
+            // 
+            // tp1_c1
+            // 
+            this.tp1_c1.FillWeight = 200F;
+            this.tp1_c1.HeaderText = "起始地址";
+            this.tp1_c1.MinimumWidth = 6;
+            this.tp1_c1.Name = "tp1_c1";
+            // 
+            // tp1_c2
+            // 
+            this.tp1_c2.FillWeight = 200F;
+            this.tp1_c2.HeaderText = "终止地址";
+            this.tp1_c2.MinimumWidth = 6;
+            this.tp1_c2.Name = "tp1_c2";
+            // 
+            // tp1_c3
+            // 
+            this.tp1_c3.FillWeight = 80F;
+            this.tp1_c3.HeaderText = "端口";
+            this.tp1_c3.MinimumWidth = 6;
+            this.tp1_c3.Name = "tp1_c3";
+            // 
+            // tp1_c4
+            // 
+            this.tp1_c4.FillWeight = 80F;
+            this.tp1_c4.HeaderText = "状态";
+            this.tp1_c4.MinimumWidth = 6;
+            this.tp1_c4.Name = "tp1_c4";
+            // 
+            // tp1_c5
+            // 
+            this.tp1_c5.FillWeight = 200F;
+            this.tp1_c5.HeaderText = "创建时间";
+            this.tp1_c5.MinimumWidth = 6;
+            this.tp1_c5.Name = "tp1_c5";
+            // 
+            // tp2_c1
+            // 
+            this.tp2_c1.FillWeight = 200F;
+            this.tp2_c1.HeaderText = "服务器地址";
+            this.tp2_c1.MinimumWidth = 6;
+            this.tp2_c1.Name = "tp2_c1";
+            // 
+            // tp2_c2
+            // 
+            this.tp2_c2.FillWeight = 80F;
+            this.tp2_c2.HeaderText = "端口";
+            this.tp2_c2.MinimumWidth = 6;
+            this.tp2_c2.Name = "tp2_c2";
+            // 
+            // tp2_c3
+            // 
+            this.tp2_c3.FillWeight = 80F;
+            this.tp2_c3.HeaderText = "状态";
+            this.tp2_c3.MinimumWidth = 6;
+            this.tp2_c3.Name = "tp2_c3";
+            // 
+            // tp2_c4
+            // 
+            this.tp2_c4.FillWeight = 120F;
+            this.tp2_c4.HeaderText = "创建时间";
+            this.tp2_c4.MinimumWidth = 6;
+            this.tp2_c4.Name = "tp2_c4";
+            // 
+            // tp2_c5
+            // 
+            this.tp2_c5.FillWeight = 120F;
+            this.tp2_c5.HeaderText = "验证时间";
+            this.tp2_c5.MinimumWidth = 6;
+            this.tp2_c5.Name = "tp2_c5";
+            // 
+            // tp2_c6
+            // 
+            this.tp2_c6.HeaderText = "备注";
+            this.tp2_c6.MinimumWidth = 6;
+            this.tp2_c6.Name = "tp2_c6";
+            // 
             // tp3_c1
             // 
+            this.tp3_c1.FillWeight = 200F;
             this.tp3_c1.HeaderText = "源IP地址";
             this.tp3_c1.MinimumWidth = 6;
             this.tp3_c1.Name = "tp3_c1";
-            this.tp3_c1.Width = 200;
             // 
             // tp3_c2
             // 
+            this.tp3_c2.FillWeight = 200F;
             this.tp3_c2.HeaderText = "目标IP地址";
             this.tp3_c2.MinimumWidth = 6;
             this.tp3_c2.Name = "tp3_c2";
-            this.tp3_c2.Width = 200;
             // 
             // tp3_c3
             // 
+            this.tp3_c3.FillWeight = 120F;
             this.tp3_c3.HeaderText = "请求时间";
             this.tp3_c3.MinimumWidth = 6;
             this.tp3_c3.Name = "tp3_c3";
             // 
             // tp3_c4
             // 
+            this.tp3_c4.FillWeight = 120F;
             this.tp3_c4.HeaderText = "答复时间";
             this.tp3_c4.MinimumWidth = 6;
             this.tp3_c4.Name = "tp3_c4";
             // 
             // tp3_c5
             // 
+            this.tp3_c5.FillWeight = 80F;
             this.tp3_c5.HeaderText = "状态";
             this.tp3_c5.MinimumWidth = 6;
             this.tp3_c5.Name = "tp3_c5";
             // 
             // tp3_c6
             // 
+            this.tp3_c6.FillWeight = 120F;
             this.tp3_c6.HeaderText = "使用代理";
             this.tp3_c6.MinimumWidth = 6;
             this.tp3_c6.Name = "tp3_c6";
-            this.tp3_c6.Width = 200;
             // 
             // FormMain
             // 
@@ -861,13 +874,13 @@
             this.toolStrip1.PerformLayout();
             this.tctlMain.ResumeLayout(false);
             this.tpgSearch.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSearch)).EndInit();
             this.tpInfo.ResumeLayout(false);
             this.tpInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMessage)).EndInit();
             this.tpSet.ResumeLayout(false);
             this.tpSet.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgServer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -927,25 +940,14 @@
         private Button btnStop;
         private Button btnStart;
         private DataGridView dgvSearch;
-        private DataGridViewTextBoxColumn tp1_c1;
-        private DataGridViewTextBoxColumn tp1_c2;
-        private DataGridViewTextBoxColumn tp1_c3;
-        private DataGridViewTextBoxColumn tp1_c4;
-        private DataGridViewTextBoxColumn tp1_c5;
-        private DataGridView dataGridView2;
+        private DataGridView dgvMessage;
         private Button btnVerify;
         private Button btnExport;
         private Button btnImport;
         private Button btnDelete;
         private Button btnAdd;
-        private DataGridView dataGridView3;
+        private DataGridView dvgServer;
         private Button btnBrowser;
-        private DataGridViewTextBoxColumn tp2_c1;
-        private DataGridViewTextBoxColumn tp2_c2;
-        private DataGridViewTextBoxColumn tp2_c3;
-        private DataGridViewTextBoxColumn tp2_c4;
-        private DataGridViewTextBoxColumn tp2_c5;
-        private DataGridViewTextBoxColumn tp2_c6;
         private TextBox txtSearch;
         private Button btnSearchBox;
         private Label lblSearch;
@@ -954,6 +956,17 @@
         private Button btnProxyBox;
         private TextBox txtPort;
         private TextBox txtAddress;
+        private DataGridViewTextBoxColumn tp1_c1;
+        private DataGridViewTextBoxColumn tp1_c2;
+        private DataGridViewTextBoxColumn tp1_c3;
+        private DataGridViewTextBoxColumn tp1_c4;
+        private DataGridViewTextBoxColumn tp1_c5;
+        private DataGridViewTextBoxColumn tp2_c1;
+        private DataGridViewTextBoxColumn tp2_c2;
+        private DataGridViewTextBoxColumn tp2_c3;
+        private DataGridViewTextBoxColumn tp2_c4;
+        private DataGridViewTextBoxColumn tp2_c5;
+        private DataGridViewTextBoxColumn tp2_c6;
         private DataGridViewTextBoxColumn tp3_c1;
         private DataGridViewTextBoxColumn tp3_c2;
         private DataGridViewTextBoxColumn tp3_c3;
