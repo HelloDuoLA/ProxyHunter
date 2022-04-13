@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyHunter", "ProxyHunter.csproj", "{A05B12EB-6939-4D7D-A4D9-FDB0CB6A22CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyHunter", "ProxyHunter.csproj", "{A05B12EB-6939-4D7D-A4D9-FDB0CB6A22CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F0729F1-3799-4169-BAFD-08F05E1FD4D8}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -74,6 +74,11 @@
             this.tctlMain = new System.Windows.Forms.TabControl();
             this.tpgSearch = new System.Windows.Forms.TabPage();
             this.dgvSearch = new System.Windows.Forms.DataGridView();
+            this.tp1_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp1_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp1_c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp1_c4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp1_c5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnResult = new System.Windows.Forms.Button();
             this.btnEnd = new System.Windows.Forms.Button();
             this.btnContinue = new System.Windows.Forms.Button();
@@ -85,6 +90,12 @@
             this.lblSearch = new System.Windows.Forms.Label();
             this.btnBrowser = new System.Windows.Forms.Button();
             this.dgvMessage = new System.Windows.Forms.DataGridView();
+            this.tp2_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp2_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp2_c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp2_c4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp2_c5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp2_c6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVerify = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnImport = new System.Windows.Forms.Button();
@@ -97,17 +108,6 @@
             this.txtPort = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.dvgServer = new System.Windows.Forms.DataGridView();
-            this.tp1_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp1_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp1_c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp1_c4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp1_c5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp3_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp3_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp3_c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -496,6 +496,41 @@
             this.dgvSearch.Size = new System.Drawing.Size(786, 317);
             this.dgvSearch.TabIndex = 10;
             // 
+            // tp1_c1
+            // 
+            this.tp1_c1.FillWeight = 200F;
+            this.tp1_c1.HeaderText = "起始地址";
+            this.tp1_c1.MinimumWidth = 6;
+            this.tp1_c1.Name = "tp1_c1";
+            // 
+            // tp1_c2
+            // 
+            this.tp1_c2.FillWeight = 200F;
+            this.tp1_c2.HeaderText = "终止地址";
+            this.tp1_c2.MinimumWidth = 6;
+            this.tp1_c2.Name = "tp1_c2";
+            // 
+            // tp1_c3
+            // 
+            this.tp1_c3.FillWeight = 80F;
+            this.tp1_c3.HeaderText = "端口";
+            this.tp1_c3.MinimumWidth = 6;
+            this.tp1_c3.Name = "tp1_c3";
+            // 
+            // tp1_c4
+            // 
+            this.tp1_c4.FillWeight = 80F;
+            this.tp1_c4.HeaderText = "状态";
+            this.tp1_c4.MinimumWidth = 6;
+            this.tp1_c4.Name = "tp1_c4";
+            // 
+            // tp1_c5
+            // 
+            this.tp1_c5.FillWeight = 200F;
+            this.tp1_c5.HeaderText = "创建时间";
+            this.tp1_c5.MinimumWidth = 6;
+            this.tp1_c5.Name = "tp1_c5";
+            // 
             // btnResult
             // 
             this.btnResult.Location = new System.Drawing.Point(406, 326);
@@ -540,6 +575,7 @@
             this.btnStart.TabIndex = 5;
             this.btnStart.Text = "开始搜索";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // tpInfo
             // 
@@ -614,6 +650,47 @@
             this.dgvMessage.RowTemplate.Height = 29;
             this.dgvMessage.Size = new System.Drawing.Size(786, 282);
             this.dgvMessage.TabIndex = 16;
+            // 
+            // tp2_c1
+            // 
+            this.tp2_c1.FillWeight = 200F;
+            this.tp2_c1.HeaderText = "服务器地址";
+            this.tp2_c1.MinimumWidth = 6;
+            this.tp2_c1.Name = "tp2_c1";
+            // 
+            // tp2_c2
+            // 
+            this.tp2_c2.FillWeight = 80F;
+            this.tp2_c2.HeaderText = "端口";
+            this.tp2_c2.MinimumWidth = 6;
+            this.tp2_c2.Name = "tp2_c2";
+            // 
+            // tp2_c3
+            // 
+            this.tp2_c3.FillWeight = 80F;
+            this.tp2_c3.HeaderText = "状态";
+            this.tp2_c3.MinimumWidth = 6;
+            this.tp2_c3.Name = "tp2_c3";
+            // 
+            // tp2_c4
+            // 
+            this.tp2_c4.FillWeight = 120F;
+            this.tp2_c4.HeaderText = "创建时间";
+            this.tp2_c4.MinimumWidth = 6;
+            this.tp2_c4.Name = "tp2_c4";
+            // 
+            // tp2_c5
+            // 
+            this.tp2_c5.FillWeight = 120F;
+            this.tp2_c5.HeaderText = "验证时间";
+            this.tp2_c5.MinimumWidth = 6;
+            this.tp2_c5.Name = "tp2_c5";
+            // 
+            // tp2_c6
+            // 
+            this.tp2_c6.HeaderText = "备注";
+            this.tp2_c6.MinimumWidth = 6;
+            this.tp2_c6.Name = "tp2_c6";
             // 
             // btnVerify
             // 
@@ -737,82 +814,6 @@
             this.dvgServer.RowTemplate.Height = 29;
             this.dvgServer.Size = new System.Drawing.Size(786, 297);
             this.dvgServer.TabIndex = 16;
-            // 
-            // tp1_c1
-            // 
-            this.tp1_c1.FillWeight = 200F;
-            this.tp1_c1.HeaderText = "起始地址";
-            this.tp1_c1.MinimumWidth = 6;
-            this.tp1_c1.Name = "tp1_c1";
-            // 
-            // tp1_c2
-            // 
-            this.tp1_c2.FillWeight = 200F;
-            this.tp1_c2.HeaderText = "终止地址";
-            this.tp1_c2.MinimumWidth = 6;
-            this.tp1_c2.Name = "tp1_c2";
-            // 
-            // tp1_c3
-            // 
-            this.tp1_c3.FillWeight = 80F;
-            this.tp1_c3.HeaderText = "端口";
-            this.tp1_c3.MinimumWidth = 6;
-            this.tp1_c3.Name = "tp1_c3";
-            // 
-            // tp1_c4
-            // 
-            this.tp1_c4.FillWeight = 80F;
-            this.tp1_c4.HeaderText = "状态";
-            this.tp1_c4.MinimumWidth = 6;
-            this.tp1_c4.Name = "tp1_c4";
-            // 
-            // tp1_c5
-            // 
-            this.tp1_c5.FillWeight = 200F;
-            this.tp1_c5.HeaderText = "创建时间";
-            this.tp1_c5.MinimumWidth = 6;
-            this.tp1_c5.Name = "tp1_c5";
-            // 
-            // tp2_c1
-            // 
-            this.tp2_c1.FillWeight = 200F;
-            this.tp2_c1.HeaderText = "服务器地址";
-            this.tp2_c1.MinimumWidth = 6;
-            this.tp2_c1.Name = "tp2_c1";
-            // 
-            // tp2_c2
-            // 
-            this.tp2_c2.FillWeight = 80F;
-            this.tp2_c2.HeaderText = "端口";
-            this.tp2_c2.MinimumWidth = 6;
-            this.tp2_c2.Name = "tp2_c2";
-            // 
-            // tp2_c3
-            // 
-            this.tp2_c3.FillWeight = 80F;
-            this.tp2_c3.HeaderText = "状态";
-            this.tp2_c3.MinimumWidth = 6;
-            this.tp2_c3.Name = "tp2_c3";
-            // 
-            // tp2_c4
-            // 
-            this.tp2_c4.FillWeight = 120F;
-            this.tp2_c4.HeaderText = "创建时间";
-            this.tp2_c4.MinimumWidth = 6;
-            this.tp2_c4.Name = "tp2_c4";
-            // 
-            // tp2_c5
-            // 
-            this.tp2_c5.FillWeight = 120F;
-            this.tp2_c5.HeaderText = "验证时间";
-            this.tp2_c5.MinimumWidth = 6;
-            this.tp2_c5.Name = "tp2_c5";
-            // 
-            // tp2_c6
-            // 
-            this.tp2_c6.HeaderText = "备注";
-            this.tp2_c6.MinimumWidth = 6;
-            this.tp2_c6.Name = "tp2_c6";
             // 
             // tp3_c1
             // 
