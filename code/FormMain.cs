@@ -36,5 +36,18 @@ namespace ProxyHunter
         {
 
         }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string a = "FF";
+                int b = Convert.ToInt32(a);
+            }
+            catch (Exception ex)
+            {
+                LogUtils.WriteLog(ex.Message.ToString(), ex);
+            }
+        }
     }
 }
