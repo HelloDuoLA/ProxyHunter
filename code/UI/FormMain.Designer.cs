@@ -157,8 +157,9 @@
             // tsmiOpen
             // 
             this.tsmiOpen.Name = "tsmiOpen";
-            this.tsmiOpen.Size = new System.Drawing.Size(137, 26);
+            this.tsmiOpen.Size = new System.Drawing.Size(224, 26);
             this.tsmiOpen.Text = "打开";
+            this.tsmiOpen.Click += new System.EventHandler(this.tsmiOpen_Click);
             // 
             // toolStripSeparator1
             // 
@@ -233,8 +234,9 @@
             // tsmiResult
             // 
             this.tsmiResult.Name = "tsmiResult";
-            this.tsmiResult.Size = new System.Drawing.Size(152, 26);
+            this.tsmiResult.Size = new System.Drawing.Size(224, 26);
             this.tsmiResult.Text = "搜索结果";
+            this.tsmiResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
             // tsmiManage
             // 
@@ -255,8 +257,9 @@
             // tsmiAdd
             // 
             this.tsmiAdd.Name = "tsmiAdd";
-            this.tsmiAdd.Size = new System.Drawing.Size(212, 26);
+            this.tsmiAdd.Size = new System.Drawing.Size(224, 26);
             this.tsmiAdd.Text = "增加代理";
+            this.tsmiAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tsmiDelete
             // 
@@ -272,14 +275,16 @@
             // tsmiImport
             // 
             this.tsmiImport.Name = "tsmiImport";
-            this.tsmiImport.Size = new System.Drawing.Size(212, 26);
+            this.tsmiImport.Size = new System.Drawing.Size(224, 26);
             this.tsmiImport.Text = "导入代理";
+            this.tsmiImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // tsmiExport
             // 
             this.tsmiExport.Name = "tsmiExport";
-            this.tsmiExport.Size = new System.Drawing.Size(212, 26);
+            this.tsmiExport.Size = new System.Drawing.Size(224, 26);
             this.tsmiExport.Text = "导出代理";
+            this.tsmiExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // toolStripSeparator5
             // 
@@ -289,8 +294,9 @@
             // tsmiVerify
             // 
             this.tsmiVerify.Name = "tsmiVerify";
-            this.tsmiVerify.Size = new System.Drawing.Size(212, 26);
+            this.tsmiVerify.Size = new System.Drawing.Size(224, 26);
             this.tsmiVerify.Text = "验证代理";
+            this.tsmiVerify.Click += new System.EventHandler(this.btnVerify_Click);
             // 
             // toolStripSeparator6
             // 
@@ -385,7 +391,6 @@
             this.tsbtn1.Name = "tsbtn1";
             this.tsbtn1.Size = new System.Drawing.Size(29, 24);
             this.tsbtn1.Text = "toolStripButton1";
-            this.tsbtn1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // tsbtn2
             // 
@@ -539,6 +544,7 @@
             this.btnResult.TabIndex = 9;
             this.btnResult.Text = "搜索结果";
             this.btnResult.UseVisualStyleBackColor = true;
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
             // btnEnd
             // 
@@ -548,6 +554,7 @@
             this.btnEnd.TabIndex = 8;
             this.btnEnd.Text = "结束搜索";
             this.btnEnd.UseVisualStyleBackColor = true;
+            this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click);
             // 
             // btnContinue
             // 
@@ -557,6 +564,7 @@
             this.btnContinue.TabIndex = 7;
             this.btnContinue.Text = "继续搜索";
             this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // btnStop
             // 
@@ -566,6 +574,7 @@
             this.btnStop.TabIndex = 6;
             this.btnStop.Text = "暂停搜索";
             this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnStart
             // 
@@ -612,6 +621,7 @@
             this.btnSearchBox.TabIndex = 19;
             this.btnSearchBox.Text = "确定";
             this.btnSearchBox.UseVisualStyleBackColor = true;
+            this.btnSearchBox.Click += new System.EventHandler(this.btnSearchBox_Click);
             // 
             // lblSearch
             // 
@@ -630,6 +640,7 @@
             this.btnBrowser.TabIndex = 17;
             this.btnBrowser.Text = "设置浏览器代理";
             this.btnBrowser.UseVisualStyleBackColor = true;
+            this.btnBrowser.Click += new System.EventHandler(this.btnBrowser_Click);
             // 
             // dgvMessage
             // 
@@ -700,6 +711,7 @@
             this.btnVerify.TabIndex = 15;
             this.btnVerify.Text = "验证代理";
             this.btnVerify.UseVisualStyleBackColor = true;
+            this.btnVerify.Click += new System.EventHandler(this.btnVerify_Click);
             // 
             // btnExport
             // 
@@ -709,6 +721,7 @@
             this.btnExport.TabIndex = 14;
             this.btnExport.Text = "导出代理";
             this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // btnImport
             // 
@@ -718,6 +731,7 @@
             this.btnImport.TabIndex = 13;
             this.btnImport.Text = "导入代理";
             this.btnImport.UseVisualStyleBackColor = true;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // btnDelete
             // 
@@ -727,6 +741,7 @@
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "删除代理";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -736,6 +751,7 @@
             this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "增加代理";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tpSet
             // 
@@ -752,7 +768,6 @@
             this.tpSet.TabIndex = 2;
             this.tpSet.Text = "代理服务器设置";
             this.tpSet.UseVisualStyleBackColor = true;
-            this.tpSet.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // lblPort
             // 
@@ -780,6 +795,7 @@
             this.btnProxyBox.TabIndex = 19;
             this.btnProxyBox.Text = "确定";
             this.btnProxyBox.UseVisualStyleBackColor = true;
+            this.btnProxyBox.Click += new System.EventHandler(this.btnProxyBox_Click);
             // 
             // txtPort
             // 
