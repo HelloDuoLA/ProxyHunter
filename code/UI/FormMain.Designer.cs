@@ -157,7 +157,7 @@
             // tsmiOpen
             // 
             this.tsmiOpen.Name = "tsmiOpen";
-            this.tsmiOpen.Size = new System.Drawing.Size(224, 26);
+            this.tsmiOpen.Size = new System.Drawing.Size(137, 26);
             this.tsmiOpen.Text = "打开";
             this.tsmiOpen.Click += new System.EventHandler(this.tsmiOpen_Click);
             // 
@@ -234,7 +234,7 @@
             // tsmiResult
             // 
             this.tsmiResult.Name = "tsmiResult";
-            this.tsmiResult.Size = new System.Drawing.Size(224, 26);
+            this.tsmiResult.Size = new System.Drawing.Size(152, 26);
             this.tsmiResult.Text = "搜索结果";
             this.tsmiResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
@@ -257,7 +257,7 @@
             // tsmiAdd
             // 
             this.tsmiAdd.Name = "tsmiAdd";
-            this.tsmiAdd.Size = new System.Drawing.Size(224, 26);
+            this.tsmiAdd.Size = new System.Drawing.Size(212, 26);
             this.tsmiAdd.Text = "增加代理";
             this.tsmiAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -275,14 +275,14 @@
             // tsmiImport
             // 
             this.tsmiImport.Name = "tsmiImport";
-            this.tsmiImport.Size = new System.Drawing.Size(224, 26);
+            this.tsmiImport.Size = new System.Drawing.Size(212, 26);
             this.tsmiImport.Text = "导入代理";
             this.tsmiImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // tsmiExport
             // 
             this.tsmiExport.Name = "tsmiExport";
-            this.tsmiExport.Size = new System.Drawing.Size(224, 26);
+            this.tsmiExport.Size = new System.Drawing.Size(212, 26);
             this.tsmiExport.Text = "导出代理";
             this.tsmiExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
@@ -294,7 +294,7 @@
             // tsmiVerify
             // 
             this.tsmiVerify.Name = "tsmiVerify";
-            this.tsmiVerify.Size = new System.Drawing.Size(224, 26);
+            this.tsmiVerify.Size = new System.Drawing.Size(212, 26);
             this.tsmiVerify.Text = "验证代理";
             this.tsmiVerify.Click += new System.EventHandler(this.btnVerify_Click);
             // 
@@ -336,20 +336,23 @@
             // tsmiSet_Windows
             // 
             this.tsmiSet_Windows.Name = "tsmiSet_Windows";
-            this.tsmiSet_Windows.Size = new System.Drawing.Size(167, 26);
+            this.tsmiSet_Windows.Size = new System.Drawing.Size(224, 26);
             this.tsmiSet_Windows.Text = "搜索任务";
+            this.tsmiSet_Windows.Click += new System.EventHandler(this.tsmiSet_Windows_Click);
             // 
             // tsmiManageTap
             // 
             this.tsmiManageTap.Name = "tsmiManageTap";
-            this.tsmiManageTap.Size = new System.Drawing.Size(167, 26);
+            this.tsmiManageTap.Size = new System.Drawing.Size(224, 26);
             this.tsmiManageTap.Text = "代理管理";
+            this.tsmiManageTap.Click += new System.EventHandler(this.tsmiManageTap_Click);
             // 
             // tsmiSetTap
             // 
             this.tsmiSetTap.Name = "tsmiSetTap";
-            this.tsmiSetTap.Size = new System.Drawing.Size(167, 26);
+            this.tsmiSetTap.Size = new System.Drawing.Size(224, 26);
             this.tsmiSetTap.Text = "代理服务器";
+            this.tsmiSetTap.Click += new System.EventHandler(this.tsmiSetTap_Click);
             // 
             // tsmiHelp
             // 

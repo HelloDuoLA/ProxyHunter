@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.dgvMessage = new System.Windows.Forms.DataGridView();
-            this.btnConfirm = new System.Windows.Forms.Button();
-            this.btnCancle = new System.Windows.Forms.Button();
             this.tp_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnConfirm = new System.Windows.Forms.Button();
+            this.btnCancle = new System.Windows.Forms.Button();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMessage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,25 +57,6 @@
             this.dgvMessage.Size = new System.Drawing.Size(796, 332);
             this.dgvMessage.TabIndex = 18;
             // 
-            // btnConfirm
-            // 
-            this.btnConfirm.Location = new System.Drawing.Point(2, 418);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(94, 29);
-            this.btnConfirm.TabIndex = 21;
-            this.btnConfirm.Text = "确定";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            // 
-            // btnCancle
-            // 
-            this.btnCancle.Location = new System.Drawing.Point(102, 418);
-            this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(94, 29);
-            this.btnCancle.TabIndex = 20;
-            this.btnCancle.Text = "取消";
-            this.btnCancle.UseVisualStyleBackColor = true;
-            this.btnCancle.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // tp_c1
             // 
             this.tp_c1.FillWeight = 200F;
@@ -90,23 +71,43 @@
             this.tp_c2.MinimumWidth = 6;
             this.tp_c2.Name = "tp_c2";
             // 
-            // label1
+            // btnConfirm
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 20);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "label1";
+            this.btnConfirm.Location = new System.Drawing.Point(2, 418);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(94, 29);
+            this.btnConfirm.TabIndex = 21;
+            this.btnConfirm.Text = "确定";
+            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
-            // label2
+            // btnCancle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "label2";
+            this.btnCancle.Location = new System.Drawing.Point(102, 418);
+            this.btnCancle.Name = "btnCancle";
+            this.btnCancle.Size = new System.Drawing.Size(94, 29);
+            this.btnCancle.TabIndex = 20;
+            this.btnCancle.Text = "取消";
+            this.btnCancle.UseVisualStyleBackColor = true;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(12, 15);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(53, 20);
+            this.lbl1.TabIndex = 22;
+            this.lbl1.Text = "ip地址";
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Location = new System.Drawing.Point(12, 45);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(39, 20);
+            this.lbl2.TabIndex = 23;
+            this.lbl2.Text = "端口";
             // 
             // textBox1
             // 
@@ -122,25 +123,25 @@
             this.textBox2.Size = new System.Drawing.Size(344, 27);
             this.textBox2.TabIndex = 25;
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(321, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(321, 45);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(94, 29);
+            this.btnAdd.TabIndex = 26;
+            this.btnAdd.Text = "添加";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.dgvMessage);
@@ -159,10 +160,10 @@
         private Button btnCancle;
         private DataGridViewTextBoxColumn tp_c1;
         private DataGridViewTextBoxColumn tp_c2;
-        private Label label1;
-        private Label label2;
+        private Label lbl1;
+        private Label lbl2;
         private TextBox textBox1;
         private TextBox textBox2;
-        private Button button1;
+        private Button btnAdd;
     }
 }

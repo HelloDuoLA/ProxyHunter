@@ -48,6 +48,7 @@
             this.btnAll.TabIndex = 29;
             this.btnAll.Text = "全选";
             this.btnAll.UseVisualStyleBackColor = true;
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnConfirm
             // 
@@ -57,6 +58,7 @@
             this.btnConfirm.TabIndex = 28;
             this.btnConfirm.Text = "确定";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancle
             // 
@@ -66,6 +68,7 @@
             this.btnCancle.TabIndex = 27;
             this.btnCancle.Text = "取消";
             this.btnCancle.UseVisualStyleBackColor = true;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // dgvMessage
             // 

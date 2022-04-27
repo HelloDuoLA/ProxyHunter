@@ -46,7 +46,11 @@ namespace ProxyHunter
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("确定要删除吗？", "删除代理", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
 
+            }
         }
 
         private void btnImport_Click(object sender, EventArgs e)
@@ -85,6 +89,21 @@ namespace ProxyHunter
         private void tsmiOpen_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tsmiSet_Windows_Click(object sender, EventArgs e)
+        {
+            tctlMain.SelectedIndex = 0;
+        }
+
+        private void tsmiManageTap_Click(object sender, EventArgs e)
+        {
+            tctlMain.SelectedIndex = 1;
+        }
+
+        private void tsmiSetTap_Click(object sender, EventArgs e)
+        {
+            tctlMain.SelectedIndex = 2;
         }
     }
 }
