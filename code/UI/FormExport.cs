@@ -16,5 +16,26 @@ namespace ProxyHunter
         {
             InitializeComponent();
         }
+
+        private void btnAll_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            //string path = "";
+            //System.Windows.Forms.SaveFileDialog saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            //saveFileDialog.FileName = fileName;
+        }
+
+        private void btnCancle_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确定要取消吗？", "取消", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

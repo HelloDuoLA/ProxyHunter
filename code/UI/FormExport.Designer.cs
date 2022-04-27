@@ -37,35 +37,42 @@
             this.tp_c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp_c4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp_c5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp_c6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMessage)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAll
             // 
-            this.btnAll.Location = new System.Drawing.Point(12, 409);
+            this.btnAll.Location = new System.Drawing.Point(9, 348);
+            this.btnAll.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnAll.Name = "btnAll";
-            this.btnAll.Size = new System.Drawing.Size(94, 29);
+            this.btnAll.Size = new System.Drawing.Size(73, 25);
             this.btnAll.TabIndex = 29;
             this.btnAll.Text = "全选";
             this.btnAll.UseVisualStyleBackColor = true;
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(112, 409);
+            this.btnConfirm.Location = new System.Drawing.Point(87, 348);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(94, 29);
+            this.btnConfirm.Size = new System.Drawing.Size(73, 25);
             this.btnConfirm.TabIndex = 28;
             this.btnConfirm.Text = "确定";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancle
             // 
-            this.btnCancle.Location = new System.Drawing.Point(212, 409);
+            this.btnCancle.Location = new System.Drawing.Point(165, 348);
+            this.btnCancle.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(94, 29);
+            this.btnCancle.Size = new System.Drawing.Size(73, 25);
             this.btnCancle.TabIndex = 27;
             this.btnCancle.Text = "取消";
             this.btnCancle.UseVisualStyleBackColor = true;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // dgvMessage
             // 
@@ -77,13 +84,15 @@
             this.tp_c2,
             this.tp_c3,
             this.tp_c4,
-            this.tp_c5});
+            this.tp_c5,
+            this.tp_c6});
             this.dgvMessage.Location = new System.Drawing.Point(2, 3);
+            this.dgvMessage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dgvMessage.Name = "dgvMessage";
             this.dgvMessage.RowHeadersVisible = false;
             this.dgvMessage.RowHeadersWidth = 51;
             this.dgvMessage.RowTemplate.Height = 29;
-            this.dgvMessage.Size = new System.Drawing.Size(796, 400);
+            this.dgvMessage.Size = new System.Drawing.Size(619, 340);
             this.dgvMessage.TabIndex = 26;
             // 
             // tp_c1
@@ -121,15 +130,21 @@
             this.tp_c5.MinimumWidth = 6;
             this.tp_c5.Name = "tp_c5";
             // 
+            // tp_c6
+            // 
+            this.tp_c6.HeaderText = "备注";
+            this.tp_c6.Name = "tp_c6";
+            // 
             // FormExport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(622, 382);
             this.Controls.Add(this.btnAll);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.dgvMessage);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "FormExport";
             this.Text = "导出代理";
             ((System.ComponentModel.ISupportInitialize)(this.dgvMessage)).EndInit();
@@ -148,5 +163,6 @@
         private DataGridViewTextBoxColumn tp_c3;
         private DataGridViewTextBoxColumn tp_c4;
         private DataGridViewTextBoxColumn tp_c5;
+        private DataGridViewTextBoxColumn tp_c6;
     }
 }

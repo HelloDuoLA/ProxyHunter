@@ -28,141 +28,152 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvMessage = new System.Windows.Forms.DataGridView();
+            this.dgvAddMessage = new System.Windows.Forms.DataGridView();
+            this.proxy_ip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_port = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancle = new System.Windows.Forms.Button();
-            this.tp_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMessage)).BeginInit();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.IPAddress = new System.Windows.Forms.TextBox();
+            this.port = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAddMessage)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvMessage
+            // dgvAddMessage
             // 
-            this.dgvMessage.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMessage.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvMessage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMessage.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tp_c1,
-            this.tp_c2});
-            this.dgvMessage.Location = new System.Drawing.Point(2, 80);
-            this.dgvMessage.Name = "dgvMessage";
-            this.dgvMessage.RowHeadersVisible = false;
-            this.dgvMessage.RowHeadersWidth = 51;
-            this.dgvMessage.RowTemplate.Height = 29;
-            this.dgvMessage.Size = new System.Drawing.Size(796, 332);
-            this.dgvMessage.TabIndex = 18;
+            this.dgvAddMessage.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvAddMessage.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvAddMessage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAddMessage.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.proxy_ip,
+            this.proxy_port});
+            this.dgvAddMessage.Location = new System.Drawing.Point(2, 68);
+            this.dgvAddMessage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvAddMessage.Name = "dgvAddMessage";
+            this.dgvAddMessage.RowHeadersVisible = false;
+            this.dgvAddMessage.RowHeadersWidth = 51;
+            this.dgvAddMessage.RowTemplate.Height = 29;
+            this.dgvAddMessage.Size = new System.Drawing.Size(619, 312);
+            this.dgvAddMessage.TabIndex = 18;
+            // 
+            // proxy_ip
+            // 
+            this.proxy_ip.FillWeight = 200F;
+            this.proxy_ip.HeaderText = "选择IP地址";
+            this.proxy_ip.MinimumWidth = 6;
+            this.proxy_ip.Name = "proxy_ip";
+            // 
+            // proxy_port
+            // 
+            this.proxy_port.FillWeight = 80F;
+            this.proxy_port.HeaderText = "选择端口";
+            this.proxy_port.MinimumWidth = 6;
+            this.proxy_port.Name = "proxy_port";
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(2, 418);
+            this.btnConfirm.Location = new System.Drawing.Point(2, 355);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(94, 29);
+            this.btnConfirm.Size = new System.Drawing.Size(73, 25);
             this.btnConfirm.TabIndex = 21;
             this.btnConfirm.Text = "确定";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancle
             // 
-            this.btnCancle.Location = new System.Drawing.Point(102, 418);
+            this.btnCancle.Location = new System.Drawing.Point(79, 355);
+            this.btnCancle.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(94, 29);
+            this.btnCancle.Size = new System.Drawing.Size(73, 25);
             this.btnCancle.TabIndex = 20;
             this.btnCancle.Text = "取消";
             this.btnCancle.UseVisualStyleBackColor = true;
-            this.btnCancle.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
-            // tp_c1
+            // lbl1
             // 
-            this.tp_c1.FillWeight = 200F;
-            this.tp_c1.HeaderText = "选择IP地址";
-            this.tp_c1.MinimumWidth = 6;
-            this.tp_c1.Name = "tp_c1";
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(9, 13);
+            this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(43, 17);
+            this.lbl1.TabIndex = 22;
+            this.lbl1.Text = "ip地址";
             // 
-            // tp_c2
+            // lbl2
             // 
-            this.tp_c2.FillWeight = 80F;
-            this.tp_c2.HeaderText = "选择端口";
-            this.tp_c2.MinimumWidth = 6;
-            this.tp_c2.Name = "tp_c2";
+            this.lbl2.AutoSize = true;
+            this.lbl2.Location = new System.Drawing.Point(275, 13);
+            this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(32, 17);
+            this.lbl2.TabIndex = 23;
+            this.lbl2.Text = "端口";
             // 
-            // label1
+            // IPAddress
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 20);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "label1";
+            this.IPAddress.Location = new System.Drawing.Point(54, 10);
+            this.IPAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.IPAddress.Name = "IPAddress";
+            this.IPAddress.Size = new System.Drawing.Size(188, 23);
+            this.IPAddress.TabIndex = 24;
             // 
-            // label2
+            // port
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "label2";
+            this.port.Location = new System.Drawing.Point(311, 10);
+            this.port.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.port.Name = "port";
+            this.port.Size = new System.Drawing.Size(97, 23);
+            this.port.TabIndex = 25;
+            this.port.Text = " ";
             // 
-            // textBox1
+            // btnAdd
             // 
-            this.textBox1.Location = new System.Drawing.Point(71, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 24;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(71, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(344, 27);
-            this.textBox2.TabIndex = 25;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(321, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(484, 9);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(73, 25);
+            this.btnAdd.TabIndex = 26;
+            this.btnAdd.Text = "添加";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // FormAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(622, 382);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.port);
+            this.Controls.Add(this.IPAddress);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancle);
-            this.Controls.Add(this.dgvMessage);
+            this.Controls.Add(this.dgvAddMessage);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "FormAdd";
             this.Text = "增加代理";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMessage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAddMessage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private DataGridView dgvMessage;
         private Button btnConfirm;
         private Button btnCancle;
-        private DataGridViewTextBoxColumn tp_c1;
-        private DataGridViewTextBoxColumn tp_c2;
-        private Label label1;
-        private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
+        private Label lbl1;
+        private Label lbl2;
+        private TextBox IPAddress;
+        private TextBox port;
+        private Button btnAdd;
+        public DataGridViewTextBoxColumn proxy_ip;
+        public DataGridViewTextBoxColumn proxy_port;
+        public DataGridView dgvAddMessage;
     }
 }
