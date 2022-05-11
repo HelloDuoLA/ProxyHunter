@@ -24,13 +24,14 @@ namespace ProxyHunter
             this.dgvProxyMessage.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             //不容许用户调整列的排列顺序
             this.dgvProxyMessage.AllowUserToOrderColumns = false;
-            //不容许用户调整列的大小
+            //容许用户调整列的大小
             this.dgvProxyMessage.AllowUserToResizeColumns = true;
-            //不容许用户调整行的大小
+            //容许用户调整行的大小
             this.dgvProxyMessage.AllowUserToResizeRows = true;
 
 
-            DirectoryInfo configDir = new DirectoryInfo(Application.StartupPath).Parent.Parent.Parent;
+            DirectoryInfo directoryInfo = new DirectoryInfo(Application.StartupPath);
+            DirectoryInfo configDir = directoryInfo.Parent.Parent.Parent;
             string[] proxyMessage = File.ReadAllLines(configDir + @"\config\proxyInitial.txt");
             for (int i = 0; i < proxyMessage.Length; i++)
             {
@@ -44,7 +45,33 @@ namespace ProxyHunter
                 dgvProxyMessage.Rows.Add(proxyIP, proxyPort, proxyStatus, proxyCT, proxyVT,proxyComments);
             }
         }
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("真的要关闭?", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                DirectoryInfo directoryInfo = new DirectoryInfo(Application.StartupPath);
+                DirectoryInfo configDir = directoryInfo.Parent.Parent.Parent;
+                string path = configDir + @"\config\proxyInitial.txt";
+                StreamWriter sw = new StreamWriter(path, false);
+                for (int i = 0; i < this.dgvProxyMessage.Rows.Count - 1; i++)
+                {
+                    string? proxyMSG = this.dgvProxyMessage.Rows[i].Cells[0].Value.ToString() + " "
+                                       + this.dgvProxyMessage.Rows[i].Cells[1].Value.ToString() + " "
+                                       + this.dgvProxyMessage.Rows[i].Cells[2].Value.ToString() + " "
+                                       + this.dgvProxyMessage.Rows[i].Cells[3].Value.ToString() + " "
+                                       + this.dgvProxyMessage.Rows[i].Cells[4].Value.ToString() + " "
+                                       + this.dgvProxyMessage.Rows[i].Cells[5].Value.ToString();
 
+                    sw.WriteLine(proxyMSG);
+                }
+                sw.Close();
+                
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -82,7 +109,7 @@ namespace ProxyHunter
             form.ShowDialog();
             if (form.dgvAddMessage.Rows.Count > 0)
             {
-                for (int i = 0; i < form.dgvAddMessage.Rows.Count; i++)
+                for (int i = 0; i < form.dgvAddMessage.Rows.Count - 1; i++)
                 {
                     proxyIP = form.dgvAddMessage.Rows[i].Cells["proxy_ip"].Value?.ToString();
                     proxyPort = form.dgvAddMessage.Rows[i].Cells["proxy_port"].Value?.ToString();
@@ -133,6 +160,16 @@ namespace ProxyHunter
         private void btnExport_Click(object sender, EventArgs e)
         {
             FormExport form = new FormExport();
+            foreach (DataGridViewRow proxyMessageRow in dgvProxyMessage.SelectedRows)
+            {
+                proxyIP = proxyMessageRow.Cells["proxy_ip"].Value?.ToString();
+                proxyPort = proxyMessageRow.Cells["proxy_port"].Value?.ToString();
+                proxyStatus = proxyMessageRow.Cells["proxy_stutas"].Value?.ToString();
+                proxyCT = proxyMessageRow.Cells["proxy_ct"].Value?.ToString();
+                proxyVT = proxyMessageRow.Cells["proxy_vt"].Value?.ToString();
+                proxyComments = proxyMessageRow.Cells["proxy_comments"].Value?.ToString();
+                form.dgvMessage.Rows.Add(proxyIP, proxyPort, proxyStatus, proxyCT, proxyVT, proxyComments);
+            }
             form.ShowDialog();
         }
 
@@ -176,6 +213,7 @@ namespace ProxyHunter
         {
             tctlMain.SelectedIndex = 2;
         }
-     
+
+        
     }
 }

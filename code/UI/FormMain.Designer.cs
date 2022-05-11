@@ -90,6 +90,12 @@
             this.lblSearch = new System.Windows.Forms.Label();
             this.btnBrowser = new System.Windows.Forms.Button();
             this.dgvProxyMessage = new System.Windows.Forms.DataGridView();
+            this.proxy_ip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_port = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_stutas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_ct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_vt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_comments = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVerify = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnImport = new System.Windows.Forms.Button();
@@ -108,12 +114,6 @@
             this.tp3_c4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp3_c5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tp3_c6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proxy_ip = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proxy_port = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proxy_stutas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proxy_ct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proxy_vt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proxy_comments = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tctlMain.SuspendLayout();
@@ -680,6 +680,47 @@
             this.dgvProxyMessage.Size = new System.Drawing.Size(611, 240);
             this.dgvProxyMessage.TabIndex = 16;
             // 
+            // proxy_ip
+            // 
+            this.proxy_ip.FillWeight = 200F;
+            this.proxy_ip.HeaderText = "服务器地址";
+            this.proxy_ip.MinimumWidth = 6;
+            this.proxy_ip.Name = "proxy_ip";
+            // 
+            // proxy_port
+            // 
+            this.proxy_port.FillWeight = 80F;
+            this.proxy_port.HeaderText = "端口";
+            this.proxy_port.MinimumWidth = 6;
+            this.proxy_port.Name = "proxy_port";
+            // 
+            // proxy_stutas
+            // 
+            this.proxy_stutas.FillWeight = 80F;
+            this.proxy_stutas.HeaderText = "状态";
+            this.proxy_stutas.MinimumWidth = 6;
+            this.proxy_stutas.Name = "proxy_stutas";
+            // 
+            // proxy_ct
+            // 
+            this.proxy_ct.FillWeight = 120F;
+            this.proxy_ct.HeaderText = "创建时间";
+            this.proxy_ct.MinimumWidth = 6;
+            this.proxy_ct.Name = "proxy_ct";
+            // 
+            // proxy_vt
+            // 
+            this.proxy_vt.FillWeight = 120F;
+            this.proxy_vt.HeaderText = "验证时间";
+            this.proxy_vt.MinimumWidth = 6;
+            this.proxy_vt.Name = "proxy_vt";
+            // 
+            // proxy_comments
+            // 
+            this.proxy_comments.HeaderText = "备注";
+            this.proxy_comments.MinimumWidth = 6;
+            this.proxy_comments.Name = "proxy_comments";
+            // 
             // btnVerify
             // 
             this.btnVerify.Location = new System.Drawing.Point(316, 277);
@@ -862,47 +903,6 @@
             this.tp3_c6.MinimumWidth = 6;
             this.tp3_c6.Name = "tp3_c6";
             // 
-            // proxy_ip
-            // 
-            this.proxy_ip.FillWeight = 200F;
-            this.proxy_ip.HeaderText = "服务器地址";
-            this.proxy_ip.MinimumWidth = 6;
-            this.proxy_ip.Name = "proxy_ip";
-            // 
-            // proxy_port
-            // 
-            this.proxy_port.FillWeight = 80F;
-            this.proxy_port.HeaderText = "端口";
-            this.proxy_port.MinimumWidth = 6;
-            this.proxy_port.Name = "proxy_port";
-            // 
-            // proxy_stutas
-            // 
-            this.proxy_stutas.FillWeight = 80F;
-            this.proxy_stutas.HeaderText = "状态";
-            this.proxy_stutas.MinimumWidth = 6;
-            this.proxy_stutas.Name = "proxy_stutas";
-            // 
-            // proxy_ct
-            // 
-            this.proxy_ct.FillWeight = 120F;
-            this.proxy_ct.HeaderText = "创建时间";
-            this.proxy_ct.MinimumWidth = 6;
-            this.proxy_ct.Name = "proxy_ct";
-            // 
-            // proxy_vt
-            // 
-            this.proxy_vt.FillWeight = 120F;
-            this.proxy_vt.HeaderText = "验证时间";
-            this.proxy_vt.MinimumWidth = 6;
-            this.proxy_vt.Name = "proxy_vt";
-            // 
-            // proxy_comments
-            // 
-            this.proxy_comments.HeaderText = "备注";
-            this.proxy_comments.MinimumWidth = 6;
-            this.proxy_comments.Name = "proxy_comments";
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -915,6 +915,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "FormMain";
             this.Text = "代理猎手";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

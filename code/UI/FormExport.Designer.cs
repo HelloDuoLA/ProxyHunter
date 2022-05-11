@@ -157,12 +157,12 @@
         private Button btnAll;
         private Button btnConfirm;
         private Button btnCancle;
-        private DataGridView dgvMessage;
         private DataGridViewTextBoxColumn tp_c1;
         private DataGridViewTextBoxColumn tp_c2;
         private DataGridViewTextBoxColumn tp_c3;
         private DataGridViewTextBoxColumn tp_c4;
         private DataGridViewTextBoxColumn tp_c5;
         private DataGridViewTextBoxColumn tp_c6;
+        public DataGridView dgvMessage;
     }
 }

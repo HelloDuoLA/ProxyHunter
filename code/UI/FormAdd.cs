@@ -33,7 +33,7 @@ namespace ProxyHunter
             //避免重复输入同样的数据
             if (dgvAddMessage.Rows.Count > 0)
             {
-                for (int i = 0; i < dgvAddMessage.Rows.Count; i++)
+                for (int i = 0; i < dgvAddMessage.Rows.Count - 1; i++)
                 {
                     if (dgvAddMessage.Rows[i].Cells["proxy_ip"].Value?.ToString() == IPAddress.Text.Trim().ToString() &
                         dgvAddMessage.Rows[i].Cells["proxy_port"].Value?.ToString() == port.Text.Trim().ToString())
