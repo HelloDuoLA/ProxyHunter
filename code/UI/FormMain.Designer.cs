@@ -137,8 +137,7 @@
             this.tsmiHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(622, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -152,42 +151,42 @@
             this.toolStripSeparator2,
             this.tsmiExit});
             this.tsmiSystem.Name = "tsmiSystem";
-            this.tsmiSystem.Size = new System.Drawing.Size(44, 21);
+            this.tsmiSystem.Size = new System.Drawing.Size(53, 24);
             this.tsmiSystem.Text = "系统";
             // 
             // tsmiOpen
             // 
             this.tsmiOpen.Name = "tsmiOpen";
-            this.tsmiOpen.Size = new System.Drawing.Size(112, 22);
+            this.tsmiOpen.Size = new System.Drawing.Size(137, 26);
             this.tsmiOpen.Text = "打开";
             this.tsmiOpen.Click += new System.EventHandler(this.tsmiOpen_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(109, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(134, 6);
             // 
             // tsmiSave
             // 
             this.tsmiSave.Name = "tsmiSave";
-            this.tsmiSave.Size = new System.Drawing.Size(112, 22);
+            this.tsmiSave.Size = new System.Drawing.Size(137, 26);
             this.tsmiSave.Text = "保存";
             // 
             // tsmiSaveas
             // 
             this.tsmiSaveas.Name = "tsmiSaveas";
-            this.tsmiSaveas.Size = new System.Drawing.Size(112, 22);
+            this.tsmiSaveas.Size = new System.Drawing.Size(137, 26);
             this.tsmiSaveas.Text = "另存为";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(109, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(134, 6);
             // 
             // tsmiExit
             // 
             this.tsmiExit.Name = "tsmiExit";
-            this.tsmiExit.Size = new System.Drawing.Size(112, 22);
+            this.tsmiExit.Size = new System.Drawing.Size(137, 26);
             this.tsmiExit.Text = "退出";
             // 
             // tsmiSearch
@@ -200,42 +199,42 @@
             this.toolStripSeparator3,
             this.tsmiResult});
             this.tsmiSearch.Name = "tsmiSearch";
-            this.tsmiSearch.Size = new System.Drawing.Size(68, 21);
+            this.tsmiSearch.Size = new System.Drawing.Size(83, 24);
             this.tsmiSearch.Text = "搜索任务";
             // 
             // tsmiStart
             // 
             this.tsmiStart.Name = "tsmiStart";
-            this.tsmiStart.Size = new System.Drawing.Size(124, 22);
+            this.tsmiStart.Size = new System.Drawing.Size(152, 26);
             this.tsmiStart.Text = "开始搜索";
             // 
             // tsmiStop
             // 
             this.tsmiStop.Name = "tsmiStop";
-            this.tsmiStop.Size = new System.Drawing.Size(124, 22);
+            this.tsmiStop.Size = new System.Drawing.Size(152, 26);
             this.tsmiStop.Text = "暂停搜索";
             // 
             // tsmiContinue
             // 
             this.tsmiContinue.Name = "tsmiContinue";
-            this.tsmiContinue.Size = new System.Drawing.Size(124, 22);
+            this.tsmiContinue.Size = new System.Drawing.Size(152, 26);
             this.tsmiContinue.Text = "继续搜索";
             // 
             // tsmiEnd
             // 
             this.tsmiEnd.Name = "tsmiEnd";
-            this.tsmiEnd.Size = new System.Drawing.Size(124, 22);
+            this.tsmiEnd.Size = new System.Drawing.Size(152, 26);
             this.tsmiEnd.Text = "结束搜索";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(121, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // tsmiResult
             // 
             this.tsmiResult.Name = "tsmiResult";
-            this.tsmiResult.Size = new System.Drawing.Size(124, 22);
+            this.tsmiResult.Size = new System.Drawing.Size(152, 26);
             this.tsmiResult.Text = "搜索结果";
             this.tsmiResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
@@ -252,62 +251,62 @@
             this.toolStripSeparator6,
             this.tsmiBrowser});
             this.tsmiManage.Name = "tsmiManage";
-            this.tsmiManage.Size = new System.Drawing.Size(68, 21);
+            this.tsmiManage.Size = new System.Drawing.Size(83, 24);
             this.tsmiManage.Text = "代理管理";
             // 
             // tsmiAdd
             // 
             this.tsmiAdd.Name = "tsmiAdd";
-            this.tsmiAdd.Size = new System.Drawing.Size(172, 22);
+            this.tsmiAdd.Size = new System.Drawing.Size(212, 26);
             this.tsmiAdd.Text = "增加代理";
             this.tsmiAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tsmiDelete
             // 
             this.tsmiDelete.Name = "tsmiDelete";
-            this.tsmiDelete.Size = new System.Drawing.Size(172, 22);
+            this.tsmiDelete.Size = new System.Drawing.Size(212, 26);
             this.tsmiDelete.Text = "删除代理";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(169, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(209, 6);
             // 
             // tsmiImport
             // 
             this.tsmiImport.Name = "tsmiImport";
-            this.tsmiImport.Size = new System.Drawing.Size(172, 22);
+            this.tsmiImport.Size = new System.Drawing.Size(212, 26);
             this.tsmiImport.Text = "导入代理";
             this.tsmiImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // tsmiExport
             // 
             this.tsmiExport.Name = "tsmiExport";
-            this.tsmiExport.Size = new System.Drawing.Size(172, 22);
+            this.tsmiExport.Size = new System.Drawing.Size(212, 26);
             this.tsmiExport.Text = "导出代理";
             this.tsmiExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(169, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(209, 6);
             // 
             // tsmiVerify
             // 
             this.tsmiVerify.Name = "tsmiVerify";
-            this.tsmiVerify.Size = new System.Drawing.Size(172, 22);
+            this.tsmiVerify.Size = new System.Drawing.Size(212, 26);
             this.tsmiVerify.Text = "验证代理";
             this.tsmiVerify.Click += new System.EventHandler(this.btnVerify_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(169, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(209, 6);
             // 
             // tsmiBrowser
             // 
             this.tsmiBrowser.Name = "tsmiBrowser";
-            this.tsmiBrowser.Size = new System.Drawing.Size(172, 22);
+            this.tsmiBrowser.Size = new System.Drawing.Size(212, 26);
             this.tsmiBrowser.Text = "设置浏览器为代理";
             // 
             // tsmiServer
@@ -315,13 +314,13 @@
             this.tsmiServer.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSet});
             this.tsmiServer.Name = "tsmiServer";
-            this.tsmiServer.Size = new System.Drawing.Size(80, 21);
+            this.tsmiServer.Size = new System.Drawing.Size(98, 24);
             this.tsmiServer.Text = "代理服务器";
             // 
             // tsmiSet
             // 
             this.tsmiSet.Name = "tsmiSet";
-            this.tsmiSet.Size = new System.Drawing.Size(124, 22);
+            this.tsmiSet.Size = new System.Drawing.Size(152, 26);
             this.tsmiSet.Text = "设定代理";
             // 
             // tsmiSearchTap
@@ -331,27 +330,27 @@
             this.tsmiManageTap,
             this.tsmiSetTap});
             this.tsmiSearchTap.Name = "tsmiSearchTap";
-            this.tsmiSearchTap.Size = new System.Drawing.Size(44, 21);
+            this.tsmiSearchTap.Size = new System.Drawing.Size(53, 24);
             this.tsmiSearchTap.Text = "窗口";
             // 
             // tsmiSet_Windows
             // 
             this.tsmiSet_Windows.Name = "tsmiSet_Windows";
-            this.tsmiSet_Windows.Size = new System.Drawing.Size(136, 22);
+            this.tsmiSet_Windows.Size = new System.Drawing.Size(167, 26);
             this.tsmiSet_Windows.Text = "搜索任务";
             this.tsmiSet_Windows.Click += new System.EventHandler(this.tsmiSet_Windows_Click);
             // 
             // tsmiManageTap
             // 
             this.tsmiManageTap.Name = "tsmiManageTap";
-            this.tsmiManageTap.Size = new System.Drawing.Size(136, 22);
+            this.tsmiManageTap.Size = new System.Drawing.Size(167, 26);
             this.tsmiManageTap.Text = "代理管理";
             this.tsmiManageTap.Click += new System.EventHandler(this.tsmiManageTap_Click);
             // 
             // tsmiSetTap
             // 
             this.tsmiSetTap.Name = "tsmiSetTap";
-            this.tsmiSetTap.Size = new System.Drawing.Size(136, 22);
+            this.tsmiSetTap.Size = new System.Drawing.Size(167, 26);
             this.tsmiSetTap.Text = "代理服务器";
             this.tsmiSetTap.Click += new System.EventHandler(this.tsmiSetTap_Click);
             // 
@@ -360,13 +359,13 @@
             this.tsmiHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiHelpFile});
             this.tsmiHelp.Name = "tsmiHelp";
-            this.tsmiHelp.Size = new System.Drawing.Size(44, 21);
+            this.tsmiHelp.Size = new System.Drawing.Size(53, 24);
             this.tsmiHelp.Text = "帮助";
             // 
             // tsmiHelpFile
             // 
             this.tsmiHelpFile.Name = "tsmiHelpFile";
-            this.tsmiHelpFile.Size = new System.Drawing.Size(124, 22);
+            this.tsmiHelpFile.Size = new System.Drawing.Size(152, 26);
             this.tsmiHelpFile.Text = "帮助文档";
             // 
             // toolStrip1
@@ -381,9 +380,9 @@
             this.tsbtn6,
             this.tsbtn7,
             this.tsbtn8});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(622, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -393,7 +392,7 @@
             this.tsbtn1.Image = ((System.Drawing.Image)(resources.GetObject("tsbtn1.Image")));
             this.tsbtn1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn1.Name = "tsbtn1";
-            this.tsbtn1.Size = new System.Drawing.Size(24, 24);
+            this.tsbtn1.Size = new System.Drawing.Size(29, 24);
             this.tsbtn1.Text = "toolStripButton1";
             // 
             // tsbtn2
@@ -402,7 +401,7 @@
             this.tsbtn2.Image = ((System.Drawing.Image)(resources.GetObject("tsbtn2.Image")));
             this.tsbtn2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn2.Name = "tsbtn2";
-            this.tsbtn2.Size = new System.Drawing.Size(24, 24);
+            this.tsbtn2.Size = new System.Drawing.Size(29, 24);
             this.tsbtn2.Text = "toolStripButton2";
             // 
             // tsbtn3
@@ -411,7 +410,7 @@
             this.tsbtn3.Image = ((System.Drawing.Image)(resources.GetObject("tsbtn3.Image")));
             this.tsbtn3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn3.Name = "tsbtn3";
-            this.tsbtn3.Size = new System.Drawing.Size(24, 24);
+            this.tsbtn3.Size = new System.Drawing.Size(29, 24);
             this.tsbtn3.Text = "toolStripButton3";
             // 
             // tsbtn4
@@ -420,7 +419,7 @@
             this.tsbtn4.Image = ((System.Drawing.Image)(resources.GetObject("tsbtn4.Image")));
             this.tsbtn4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn4.Name = "tsbtn4";
-            this.tsbtn4.Size = new System.Drawing.Size(24, 24);
+            this.tsbtn4.Size = new System.Drawing.Size(29, 24);
             this.tsbtn4.Text = "toolStripButton4";
             // 
             // tsbtn5
@@ -429,7 +428,7 @@
             this.tsbtn5.Image = ((System.Drawing.Image)(resources.GetObject("tsbtn5.Image")));
             this.tsbtn5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn5.Name = "tsbtn5";
-            this.tsbtn5.Size = new System.Drawing.Size(24, 24);
+            this.tsbtn5.Size = new System.Drawing.Size(29, 24);
             this.tsbtn5.Text = "toolStripButton5";
             // 
             // tsbtn6
@@ -438,7 +437,7 @@
             this.tsbtn6.Image = ((System.Drawing.Image)(resources.GetObject("tsbtn6.Image")));
             this.tsbtn6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn6.Name = "tsbtn6";
-            this.tsbtn6.Size = new System.Drawing.Size(24, 24);
+            this.tsbtn6.Size = new System.Drawing.Size(29, 24);
             this.tsbtn6.Text = "toolStripButton6";
             // 
             // tsbtn7
@@ -447,7 +446,7 @@
             this.tsbtn7.Image = ((System.Drawing.Image)(resources.GetObject("tsbtn7.Image")));
             this.tsbtn7.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn7.Name = "tsbtn7";
-            this.tsbtn7.Size = new System.Drawing.Size(24, 24);
+            this.tsbtn7.Size = new System.Drawing.Size(29, 24);
             this.tsbtn7.Text = "toolStripButton7";
             // 
             // tsbtn8
@@ -456,19 +455,22 @@
             this.tsbtn8.Image = ((System.Drawing.Image)(resources.GetObject("tsbtn8.Image")));
             this.tsbtn8.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn8.Name = "tsbtn8";
-            this.tsbtn8.Size = new System.Drawing.Size(24, 24);
+            this.tsbtn8.Size = new System.Drawing.Size(29, 24);
             this.tsbtn8.Text = "toolStripButton8";
             // 
             // tctlMain
             // 
+            this.tctlMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tctlMain.Controls.Add(this.tpgSearch);
             this.tctlMain.Controls.Add(this.tpInfo);
             this.tctlMain.Controls.Add(this.tpSet);
-            this.tctlMain.Location = new System.Drawing.Point(0, 49);
-            this.tctlMain.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tctlMain.Location = new System.Drawing.Point(0, 58);
+            this.tctlMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tctlMain.Name = "tctlMain";
             this.tctlMain.SelectedIndex = 0;
-            this.tctlMain.Size = new System.Drawing.Size(622, 332);
+            this.tctlMain.Size = new System.Drawing.Size(800, 391);
             this.tctlMain.TabIndex = 2;
             // 
             // tpgSearch
@@ -479,17 +481,20 @@
             this.tpgSearch.Controls.Add(this.btnContinue);
             this.tpgSearch.Controls.Add(this.btnStop);
             this.tpgSearch.Controls.Add(this.btnStart);
-            this.tpgSearch.Location = new System.Drawing.Point(4, 26);
-            this.tpgSearch.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpgSearch.Location = new System.Drawing.Point(4, 29);
+            this.tpgSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpgSearch.Name = "tpgSearch";
-            this.tpgSearch.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tpgSearch.Size = new System.Drawing.Size(614, 302);
+            this.tpgSearch.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpgSearch.Size = new System.Drawing.Size(792, 358);
             this.tpgSearch.TabIndex = 0;
             this.tpgSearch.Text = "搜索任务";
             this.tpgSearch.UseVisualStyleBackColor = true;
             // 
             // dgvSearch
             // 
+            this.dgvSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSearch.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -499,14 +504,15 @@
             this.tp1_c3,
             this.tp1_c4,
             this.tp1_c5});
-            this.dgvSearch.Location = new System.Drawing.Point(2, 5);
-            this.dgvSearch.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvSearch.Location = new System.Drawing.Point(3, 6);
+            this.dgvSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvSearch.Name = "dgvSearch";
             this.dgvSearch.RowHeadersVisible = false;
             this.dgvSearch.RowHeadersWidth = 51;
             this.dgvSearch.RowTemplate.Height = 29;
-            this.dgvSearch.Size = new System.Drawing.Size(611, 269);
+            this.dgvSearch.Size = new System.Drawing.Size(786, 316);
             this.dgvSearch.TabIndex = 10;
+            this.dgvSearch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSearch_CellContentClick);
             // 
             // tp1_c1
             // 
@@ -545,10 +551,10 @@
             // 
             // btnResult
             // 
-            this.btnResult.Location = new System.Drawing.Point(316, 277);
-            this.btnResult.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnResult.Location = new System.Drawing.Point(406, 326);
+            this.btnResult.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnResult.Name = "btnResult";
-            this.btnResult.Size = new System.Drawing.Size(73, 25);
+            this.btnResult.Size = new System.Drawing.Size(94, 29);
             this.btnResult.TabIndex = 9;
             this.btnResult.Text = "搜索结果";
             this.btnResult.UseVisualStyleBackColor = true;
@@ -556,10 +562,10 @@
             // 
             // btnEnd
             // 
-            this.btnEnd.Location = new System.Drawing.Point(238, 277);
-            this.btnEnd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEnd.Location = new System.Drawing.Point(306, 326);
+            this.btnEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEnd.Name = "btnEnd";
-            this.btnEnd.Size = new System.Drawing.Size(73, 25);
+            this.btnEnd.Size = new System.Drawing.Size(94, 29);
             this.btnEnd.TabIndex = 8;
             this.btnEnd.Text = "结束搜索";
             this.btnEnd.UseVisualStyleBackColor = true;
@@ -567,10 +573,10 @@
             // 
             // btnContinue
             // 
-            this.btnContinue.Location = new System.Drawing.Point(160, 277);
-            this.btnContinue.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnContinue.Location = new System.Drawing.Point(206, 326);
+            this.btnContinue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(73, 25);
+            this.btnContinue.Size = new System.Drawing.Size(94, 29);
             this.btnContinue.TabIndex = 7;
             this.btnContinue.Text = "继续搜索";
             this.btnContinue.UseVisualStyleBackColor = true;
@@ -578,10 +584,10 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(82, 277);
-            this.btnStop.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnStop.Location = new System.Drawing.Point(105, 326);
+            this.btnStop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(73, 25);
+            this.btnStop.Size = new System.Drawing.Size(94, 29);
             this.btnStop.TabIndex = 6;
             this.btnStop.Text = "暂停搜索";
             this.btnStop.UseVisualStyleBackColor = true;
@@ -589,10 +595,10 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(5, 277);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnStart.Location = new System.Drawing.Point(6, 326);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(73, 25);
+            this.btnStart.Size = new System.Drawing.Size(94, 29);
             this.btnStart.TabIndex = 5;
             this.btnStart.Text = "开始搜索";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -610,29 +616,29 @@
             this.tpInfo.Controls.Add(this.btnImport);
             this.tpInfo.Controls.Add(this.btnDelete);
             this.tpInfo.Controls.Add(this.btnAdd);
-            this.tpInfo.Location = new System.Drawing.Point(4, 26);
-            this.tpInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpInfo.Location = new System.Drawing.Point(4, 29);
+            this.tpInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpInfo.Name = "tpInfo";
-            this.tpInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tpInfo.Size = new System.Drawing.Size(614, 302);
+            this.tpInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpInfo.Size = new System.Drawing.Size(792, 358);
             this.tpInfo.TabIndex = 1;
             this.tpInfo.Text = "代理信息";
             this.tpInfo.UseVisualStyleBackColor = true;
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(49, 5);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtSearch.Location = new System.Drawing.Point(63, 6);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(491, 23);
+            this.txtSearch.Size = new System.Drawing.Size(630, 27);
             this.txtSearch.TabIndex = 20;
             // 
             // btnSearchBox
             // 
-            this.btnSearchBox.Location = new System.Drawing.Point(544, 4);
-            this.btnSearchBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSearchBox.Location = new System.Drawing.Point(699, 5);
+            this.btnSearchBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchBox.Name = "btnSearchBox";
-            this.btnSearchBox.Size = new System.Drawing.Size(66, 25);
+            this.btnSearchBox.Size = new System.Drawing.Size(85, 29);
             this.btnSearchBox.TabIndex = 19;
             this.btnSearchBox.Text = "确定";
             this.btnSearchBox.UseVisualStyleBackColor = true;
@@ -641,19 +647,18 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(3, 8);
-            this.lblSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSearch.Location = new System.Drawing.Point(4, 9);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(44, 17);
+            this.lblSearch.Size = new System.Drawing.Size(54, 20);
             this.lblSearch.TabIndex = 18;
             this.lblSearch.Text = "搜索：";
             // 
             // btnBrowser
             // 
-            this.btnBrowser.Location = new System.Drawing.Point(394, 277);
-            this.btnBrowser.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnBrowser.Location = new System.Drawing.Point(507, 326);
+            this.btnBrowser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBrowser.Name = "btnBrowser";
-            this.btnBrowser.Size = new System.Drawing.Size(109, 25);
+            this.btnBrowser.Size = new System.Drawing.Size(140, 29);
             this.btnBrowser.TabIndex = 17;
             this.btnBrowser.Text = "设置浏览器代理";
             this.btnBrowser.UseVisualStyleBackColor = true;
@@ -661,6 +666,9 @@
             // 
             // dgvProxyMessage
             // 
+            this.dgvProxyMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvProxyMessage.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProxyMessage.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvProxyMessage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -671,13 +679,13 @@
             this.proxy_ct,
             this.proxy_vt,
             this.proxy_comments});
-            this.dgvProxyMessage.Location = new System.Drawing.Point(2, 32);
-            this.dgvProxyMessage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvProxyMessage.Location = new System.Drawing.Point(3, 38);
+            this.dgvProxyMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvProxyMessage.Name = "dgvProxyMessage";
             this.dgvProxyMessage.RowHeadersVisible = false;
             this.dgvProxyMessage.RowHeadersWidth = 51;
             this.dgvProxyMessage.RowTemplate.Height = 29;
-            this.dgvProxyMessage.Size = new System.Drawing.Size(611, 240);
+            this.dgvProxyMessage.Size = new System.Drawing.Size(786, 282);
             this.dgvProxyMessage.TabIndex = 16;
             // 
             // proxy_ip
@@ -723,10 +731,10 @@
             // 
             // btnVerify
             // 
-            this.btnVerify.Location = new System.Drawing.Point(316, 277);
-            this.btnVerify.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnVerify.Location = new System.Drawing.Point(406, 326);
+            this.btnVerify.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnVerify.Name = "btnVerify";
-            this.btnVerify.Size = new System.Drawing.Size(73, 25);
+            this.btnVerify.Size = new System.Drawing.Size(94, 29);
             this.btnVerify.TabIndex = 15;
             this.btnVerify.Text = "验证代理";
             this.btnVerify.UseVisualStyleBackColor = true;
@@ -734,10 +742,10 @@
             // 
             // btnExport
             // 
-            this.btnExport.Location = new System.Drawing.Point(238, 277);
-            this.btnExport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnExport.Location = new System.Drawing.Point(306, 326);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(73, 25);
+            this.btnExport.Size = new System.Drawing.Size(94, 29);
             this.btnExport.TabIndex = 14;
             this.btnExport.Text = "导出代理";
             this.btnExport.UseVisualStyleBackColor = true;
@@ -745,10 +753,10 @@
             // 
             // btnImport
             // 
-            this.btnImport.Location = new System.Drawing.Point(160, 277);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnImport.Location = new System.Drawing.Point(206, 326);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(73, 25);
+            this.btnImport.Size = new System.Drawing.Size(94, 29);
             this.btnImport.TabIndex = 13;
             this.btnImport.Text = "导入代理";
             this.btnImport.UseVisualStyleBackColor = true;
@@ -756,10 +764,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(82, 277);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDelete.Location = new System.Drawing.Point(105, 326);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(73, 25);
+            this.btnDelete.Size = new System.Drawing.Size(94, 29);
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "删除代理";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -767,10 +775,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(5, 277);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAdd.Location = new System.Drawing.Point(6, 326);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(73, 25);
+            this.btnAdd.Size = new System.Drawing.Size(94, 29);
             this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "增加代理";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -784,11 +792,11 @@
             this.tpSet.Controls.Add(this.txtPort);
             this.tpSet.Controls.Add(this.txtAddress);
             this.tpSet.Controls.Add(this.dvgServer);
-            this.tpSet.Location = new System.Drawing.Point(4, 26);
-            this.tpSet.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpSet.Location = new System.Drawing.Point(4, 29);
+            this.tpSet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpSet.Name = "tpSet";
-            this.tpSet.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tpSet.Size = new System.Drawing.Size(614, 302);
+            this.tpSet.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpSet.Size = new System.Drawing.Size(792, 358);
             this.tpSet.TabIndex = 2;
             this.tpSet.Text = "代理服务器设置";
             this.tpSet.UseVisualStyleBackColor = true;
@@ -796,29 +804,27 @@
             // lblPort
             // 
             this.lblPort.AutoSize = true;
-            this.lblPort.Location = new System.Drawing.Point(179, 3);
-            this.lblPort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPort.Location = new System.Drawing.Point(230, 4);
             this.lblPort.Name = "lblPort";
-            this.lblPort.Size = new System.Drawing.Size(32, 17);
+            this.lblPort.Size = new System.Drawing.Size(39, 20);
             this.lblPort.TabIndex = 21;
             this.lblPort.Text = "端口";
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(2, 3);
-            this.lblAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAddress.Location = new System.Drawing.Point(3, 4);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(43, 17);
+            this.lblAddress.Size = new System.Drawing.Size(52, 20);
             this.lblAddress.TabIndex = 20;
             this.lblAddress.Text = "IP地址";
             // 
             // btnProxyBox
             // 
-            this.btnProxyBox.Location = new System.Drawing.Point(281, 20);
-            this.btnProxyBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnProxyBox.Location = new System.Drawing.Point(361, 24);
+            this.btnProxyBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnProxyBox.Name = "btnProxyBox";
-            this.btnProxyBox.Size = new System.Drawing.Size(73, 25);
+            this.btnProxyBox.Size = new System.Drawing.Size(94, 29);
             this.btnProxyBox.TabIndex = 19;
             this.btnProxyBox.Text = "确定";
             this.btnProxyBox.UseVisualStyleBackColor = true;
@@ -826,18 +832,18 @@
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(179, 21);
-            this.txtPort.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtPort.Location = new System.Drawing.Point(230, 25);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(98, 23);
+            this.txtPort.Size = new System.Drawing.Size(125, 27);
             this.txtPort.TabIndex = 18;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(2, 22);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtAddress.Location = new System.Drawing.Point(3, 26);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(173, 23);
+            this.txtAddress.Size = new System.Drawing.Size(221, 27);
             this.txtAddress.TabIndex = 17;
             // 
             // dvgServer
@@ -852,13 +858,13 @@
             this.tp3_c4,
             this.tp3_c5,
             this.tp3_c6});
-            this.dvgServer.Location = new System.Drawing.Point(2, 49);
-            this.dvgServer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dvgServer.Location = new System.Drawing.Point(3, 58);
+            this.dvgServer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dvgServer.Name = "dvgServer";
             this.dvgServer.RowHeadersVisible = false;
             this.dvgServer.RowHeadersWidth = 51;
             this.dvgServer.RowTemplate.Height = 29;
-            this.dvgServer.Size = new System.Drawing.Size(611, 252);
+            this.dvgServer.Size = new System.Drawing.Size(786, 296);
             this.dvgServer.TabIndex = 16;
             // 
             // tp3_c1
@@ -905,14 +911,14 @@
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 382);
+            this.ClientSize = new System.Drawing.Size(800, 449);
             this.Controls.Add(this.tctlMain);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormMain";
             this.Text = "代理猎手";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);

@@ -150,7 +150,7 @@ namespace ProxyHunter
             {
                 if (form.dgvMessage.Rows.Count > 0)
                 {
-                    for (int i = 0; i < form.dgvMessage.Rows.Count; i++)
+                    for (int i = 0; i < form.dgvMessage.Rows.Count - 1; i++)
                     {
                         proxyIP = form.dgvMessage.Rows[i].Cells["tp_c1"].Value?.ToString();
                         proxyPort = form.dgvMessage.Rows[i].Cells["tp_c2"].Value?.ToString();
@@ -238,6 +238,9 @@ namespace ProxyHunter
             tctlMain.SelectedIndex = 2;
         }
 
-        
+        private void dgvSearch_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

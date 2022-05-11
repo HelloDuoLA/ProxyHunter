@@ -1,21 +1,20 @@
-﻿using ProxyHunter;
-using System.Net;
+﻿using System.Net;
 
 namespace ClassLibrary
 {
     public class Class1
     {
-        public static string proxyIP;
-        public static string proxyPort;
-        public static string proxyStatus;
-        public static string proxyCT;
-        public static string proxyVT;
-        public static string proxyComments;
+        public static string? proxyIP;
+        public static string? proxyPort;
+        public static string? proxyStatus;
+        public static string? proxyCT;
+        public static string? proxyVT;
+        public static string? proxyComments;
 
         public static string PorxyVerify(string IP, int port, string url)
         {
             bool isok = true;
-            string rs = null;
+            string? rs = null;
             while (isok)
             {
                 try

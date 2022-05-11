@@ -46,5 +46,10 @@ namespace ProxyHunter
         {
 
         }
+
+        private void FormVerify_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
