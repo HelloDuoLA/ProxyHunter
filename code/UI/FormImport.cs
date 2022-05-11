@@ -29,6 +29,7 @@ namespace ProxyHunter
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+            DialogResult = DialogResult.OK;
             this.Close();
         }
 
@@ -59,12 +60,12 @@ namespace ProxyHunter
                 System.IO.StreamReader file = new System.IO.StreamReader(fileName);
                 while ((line = file.ReadLine()) != null)
                 {
-                    string proxyIP = line.Split(' ')[0];
-                    string proxyPort = line.Split(' ')[1];
-                    string proxyStatus = line.Split(' ')[2];
-                    string proxyCT = line.Split(' ')[3];
-                    string proxyVT = line.Split(' ')[4];
-                    string proxyComments = line.Split(' ')[5];
+                    string proxyIP = line.Split(';')[0];
+                    string proxyPort = line.Split(';')[1];
+                    string proxyStatus = line.Split(';')[2];
+                    string proxyCT = line.Split(';')[3];
+                    string proxyVT = line.Split(';')[4];
+                    string proxyComments = line.Split(';')[5];
                     dgvMessage.Rows.Add(proxyIP, proxyPort, proxyStatus, proxyCT, proxyVT, proxyComments);
                 }
 

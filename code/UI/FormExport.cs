@@ -50,11 +50,11 @@ namespace ProxyHunter
             StreamWriter sw = new StreamWriter(path,false);
             for (int i = 0; i < this.dgvMessage.Rows.Count - 1; i++)
             {
-                string? proxyMSG = this.dgvMessage.Rows[i].Cells[0].Value.ToString() + " "
-                                   + this.dgvMessage.Rows[i].Cells[1].Value.ToString() + " "
-                                   + this.dgvMessage.Rows[i].Cells[2].Value.ToString() + " "
-                                   + this.dgvMessage.Rows[i].Cells[3].Value.ToString() + " "
-                                   + this.dgvMessage.Rows[i].Cells[4].Value.ToString() + " "
+                string? proxyMSG = this.dgvMessage.Rows[i].Cells[0].Value.ToString() + ";"
+                                   + this.dgvMessage.Rows[i].Cells[1].Value.ToString() + ";"
+                                   + this.dgvMessage.Rows[i].Cells[2].Value.ToString() + ";"
+                                   + this.dgvMessage.Rows[i].Cells[3].Value.ToString() + ";"
+                                   + this.dgvMessage.Rows[i].Cells[4].Value.ToString() + ";"
                                    + this.dgvMessage.Rows[i].Cells[5].Value.ToString();
                 
                 sw.WriteLine(proxyMSG);

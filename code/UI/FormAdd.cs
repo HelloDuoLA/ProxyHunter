@@ -12,15 +12,15 @@ namespace ProxyHunter
 
         public void btnConfirm_Click(object sender, EventArgs e)
         {
-           
+            DialogResult = DialogResult.OK;
             this.Close();
         }
 
-        private void btnCancle_Click(object sender, EventArgs e)
+        public void btnCancle_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("确定要取消吗？", "取消", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
-            {
+            {   
                 this.Close();
             }
         }
