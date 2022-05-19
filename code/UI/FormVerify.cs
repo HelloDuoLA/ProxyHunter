@@ -24,7 +24,8 @@ namespace ProxyHunter
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-
+            DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void btnCancle_Click(object sender, EventArgs e)
@@ -34,6 +35,21 @@ namespace ProxyHunter
             {
                 this.Close();
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VerifyURL_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormVerify_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

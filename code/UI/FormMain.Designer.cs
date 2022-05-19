@@ -89,13 +89,13 @@
             this.btnSearchBox = new System.Windows.Forms.Button();
             this.lblSearch = new System.Windows.Forms.Label();
             this.btnBrowser = new System.Windows.Forms.Button();
-            this.dgvMessage = new System.Windows.Forms.DataGridView();
-            this.tp2_c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp2_c6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvProxyMessage = new System.Windows.Forms.DataGridView();
+            this.proxy_ip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_port = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_stutas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_ct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_vt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proxy_comments = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVerify = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnImport = new System.Windows.Forms.Button();
@@ -120,7 +120,7 @@
             this.tpgSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearch)).BeginInit();
             this.tpInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMessage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProxyMessage)).BeginInit();
             this.tpSet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgServer)).BeginInit();
             this.SuspendLayout();
@@ -460,10 +460,14 @@
             // 
             // tctlMain
             // 
+            this.tctlMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tctlMain.Controls.Add(this.tpgSearch);
             this.tctlMain.Controls.Add(this.tpInfo);
             this.tctlMain.Controls.Add(this.tpSet);
             this.tctlMain.Location = new System.Drawing.Point(0, 58);
+            this.tctlMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tctlMain.Name = "tctlMain";
             this.tctlMain.SelectedIndex = 0;
             this.tctlMain.Size = new System.Drawing.Size(800, 391);
@@ -478,8 +482,9 @@
             this.tpgSearch.Controls.Add(this.btnStop);
             this.tpgSearch.Controls.Add(this.btnStart);
             this.tpgSearch.Location = new System.Drawing.Point(4, 29);
+            this.tpgSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpgSearch.Name = "tpgSearch";
-            this.tpgSearch.Padding = new System.Windows.Forms.Padding(3);
+            this.tpgSearch.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpgSearch.Size = new System.Drawing.Size(792, 358);
             this.tpgSearch.TabIndex = 0;
             this.tpgSearch.Text = "搜索任务";
@@ -487,6 +492,9 @@
             // 
             // dgvSearch
             // 
+            this.dgvSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSearch.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -497,12 +505,14 @@
             this.tp1_c4,
             this.tp1_c5});
             this.dgvSearch.Location = new System.Drawing.Point(3, 6);
+            this.dgvSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvSearch.Name = "dgvSearch";
             this.dgvSearch.RowHeadersVisible = false;
             this.dgvSearch.RowHeadersWidth = 51;
             this.dgvSearch.RowTemplate.Height = 29;
-            this.dgvSearch.Size = new System.Drawing.Size(786, 317);
+            this.dgvSearch.Size = new System.Drawing.Size(786, 316);
             this.dgvSearch.TabIndex = 10;
+            this.dgvSearch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSearch_CellContentClick);
             // 
             // tp1_c1
             // 
@@ -542,6 +552,7 @@
             // btnResult
             // 
             this.btnResult.Location = new System.Drawing.Point(406, 326);
+            this.btnResult.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnResult.Name = "btnResult";
             this.btnResult.Size = new System.Drawing.Size(94, 29);
             this.btnResult.TabIndex = 9;
@@ -552,6 +563,7 @@
             // btnEnd
             // 
             this.btnEnd.Location = new System.Drawing.Point(306, 326);
+            this.btnEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEnd.Name = "btnEnd";
             this.btnEnd.Size = new System.Drawing.Size(94, 29);
             this.btnEnd.TabIndex = 8;
@@ -562,6 +574,7 @@
             // btnContinue
             // 
             this.btnContinue.Location = new System.Drawing.Point(206, 326);
+            this.btnContinue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(94, 29);
             this.btnContinue.TabIndex = 7;
@@ -571,7 +584,8 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(106, 326);
+            this.btnStop.Location = new System.Drawing.Point(105, 326);
+            this.btnStop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(94, 29);
             this.btnStop.TabIndex = 6;
@@ -582,6 +596,7 @@
             // btnStart
             // 
             this.btnStart.Location = new System.Drawing.Point(6, 326);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(94, 29);
             this.btnStart.TabIndex = 5;
@@ -595,15 +610,16 @@
             this.tpInfo.Controls.Add(this.btnSearchBox);
             this.tpInfo.Controls.Add(this.lblSearch);
             this.tpInfo.Controls.Add(this.btnBrowser);
-            this.tpInfo.Controls.Add(this.dgvMessage);
+            this.tpInfo.Controls.Add(this.dgvProxyMessage);
             this.tpInfo.Controls.Add(this.btnVerify);
             this.tpInfo.Controls.Add(this.btnExport);
             this.tpInfo.Controls.Add(this.btnImport);
             this.tpInfo.Controls.Add(this.btnDelete);
             this.tpInfo.Controls.Add(this.btnAdd);
             this.tpInfo.Location = new System.Drawing.Point(4, 29);
+            this.tpInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpInfo.Name = "tpInfo";
-            this.tpInfo.Padding = new System.Windows.Forms.Padding(3);
+            this.tpInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpInfo.Size = new System.Drawing.Size(792, 358);
             this.tpInfo.TabIndex = 1;
             this.tpInfo.Text = "代理信息";
@@ -612,6 +628,7 @@
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(63, 6);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(630, 27);
             this.txtSearch.TabIndex = 20;
@@ -619,6 +636,7 @@
             // btnSearchBox
             // 
             this.btnSearchBox.Location = new System.Drawing.Point(699, 5);
+            this.btnSearchBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchBox.Name = "btnSearchBox";
             this.btnSearchBox.Size = new System.Drawing.Size(85, 29);
             this.btnSearchBox.TabIndex = 19;
@@ -637,7 +655,8 @@
             // 
             // btnBrowser
             // 
-            this.btnBrowser.Location = new System.Drawing.Point(506, 326);
+            this.btnBrowser.Location = new System.Drawing.Point(507, 326);
+            this.btnBrowser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBrowser.Name = "btnBrowser";
             this.btnBrowser.Size = new System.Drawing.Size(140, 29);
             this.btnBrowser.TabIndex = 17;
@@ -645,70 +664,75 @@
             this.btnBrowser.UseVisualStyleBackColor = true;
             this.btnBrowser.Click += new System.EventHandler(this.btnBrowser_Click);
             // 
-            // dgvMessage
+            // dgvProxyMessage
             // 
-            this.dgvMessage.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMessage.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvMessage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMessage.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tp2_c1,
-            this.tp2_c2,
-            this.tp2_c3,
-            this.tp2_c4,
-            this.tp2_c5,
-            this.tp2_c6});
-            this.dgvMessage.Location = new System.Drawing.Point(3, 38);
-            this.dgvMessage.Name = "dgvMessage";
-            this.dgvMessage.RowHeadersVisible = false;
-            this.dgvMessage.RowHeadersWidth = 51;
-            this.dgvMessage.RowTemplate.Height = 29;
-            this.dgvMessage.Size = new System.Drawing.Size(786, 282);
-            this.dgvMessage.TabIndex = 16;
+            this.dgvProxyMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvProxyMessage.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProxyMessage.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvProxyMessage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProxyMessage.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.proxy_ip,
+            this.proxy_port,
+            this.proxy_stutas,
+            this.proxy_ct,
+            this.proxy_vt,
+            this.proxy_comments});
+            this.dgvProxyMessage.Location = new System.Drawing.Point(3, 38);
+            this.dgvProxyMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvProxyMessage.Name = "dgvProxyMessage";
+            this.dgvProxyMessage.RowHeadersVisible = false;
+            this.dgvProxyMessage.RowHeadersWidth = 51;
+            this.dgvProxyMessage.RowTemplate.Height = 29;
+            this.dgvProxyMessage.Size = new System.Drawing.Size(786, 282);
+            this.dgvProxyMessage.TabIndex = 16;
             // 
-            // tp2_c1
+            // proxy_ip
             // 
-            this.tp2_c1.FillWeight = 200F;
-            this.tp2_c1.HeaderText = "服务器地址";
-            this.tp2_c1.MinimumWidth = 6;
-            this.tp2_c1.Name = "tp2_c1";
+            this.proxy_ip.FillWeight = 200F;
+            this.proxy_ip.HeaderText = "服务器地址";
+            this.proxy_ip.MinimumWidth = 6;
+            this.proxy_ip.Name = "proxy_ip";
             // 
-            // tp2_c2
+            // proxy_port
             // 
-            this.tp2_c2.FillWeight = 80F;
-            this.tp2_c2.HeaderText = "端口";
-            this.tp2_c2.MinimumWidth = 6;
-            this.tp2_c2.Name = "tp2_c2";
+            this.proxy_port.FillWeight = 80F;
+            this.proxy_port.HeaderText = "端口";
+            this.proxy_port.MinimumWidth = 6;
+            this.proxy_port.Name = "proxy_port";
             // 
-            // tp2_c3
+            // proxy_stutas
             // 
-            this.tp2_c3.FillWeight = 80F;
-            this.tp2_c3.HeaderText = "状态";
-            this.tp2_c3.MinimumWidth = 6;
-            this.tp2_c3.Name = "tp2_c3";
+            this.proxy_stutas.FillWeight = 80F;
+            this.proxy_stutas.HeaderText = "状态";
+            this.proxy_stutas.MinimumWidth = 6;
+            this.proxy_stutas.Name = "proxy_stutas";
             // 
-            // tp2_c4
+            // proxy_ct
             // 
-            this.tp2_c4.FillWeight = 120F;
-            this.tp2_c4.HeaderText = "创建时间";
-            this.tp2_c4.MinimumWidth = 6;
-            this.tp2_c4.Name = "tp2_c4";
+            this.proxy_ct.FillWeight = 120F;
+            this.proxy_ct.HeaderText = "创建时间";
+            this.proxy_ct.MinimumWidth = 6;
+            this.proxy_ct.Name = "proxy_ct";
             // 
-            // tp2_c5
+            // proxy_vt
             // 
-            this.tp2_c5.FillWeight = 120F;
-            this.tp2_c5.HeaderText = "验证时间";
-            this.tp2_c5.MinimumWidth = 6;
-            this.tp2_c5.Name = "tp2_c5";
+            this.proxy_vt.FillWeight = 120F;
+            this.proxy_vt.HeaderText = "验证时间";
+            this.proxy_vt.MinimumWidth = 6;
+            this.proxy_vt.Name = "proxy_vt";
             // 
-            // tp2_c6
+            // proxy_comments
             // 
-            this.tp2_c6.HeaderText = "备注";
-            this.tp2_c6.MinimumWidth = 6;
-            this.tp2_c6.Name = "tp2_c6";
+            this.proxy_comments.HeaderText = "备注";
+            this.proxy_comments.MinimumWidth = 6;
+            this.proxy_comments.Name = "proxy_comments";
             // 
             // btnVerify
             // 
             this.btnVerify.Location = new System.Drawing.Point(406, 326);
+            this.btnVerify.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnVerify.Name = "btnVerify";
             this.btnVerify.Size = new System.Drawing.Size(94, 29);
             this.btnVerify.TabIndex = 15;
@@ -719,6 +743,7 @@
             // btnExport
             // 
             this.btnExport.Location = new System.Drawing.Point(306, 326);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(94, 29);
             this.btnExport.TabIndex = 14;
@@ -729,6 +754,7 @@
             // btnImport
             // 
             this.btnImport.Location = new System.Drawing.Point(206, 326);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(94, 29);
             this.btnImport.TabIndex = 13;
@@ -738,7 +764,8 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(106, 326);
+            this.btnDelete.Location = new System.Drawing.Point(105, 326);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(94, 29);
             this.btnDelete.TabIndex = 12;
@@ -749,6 +776,7 @@
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(6, 326);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(94, 29);
             this.btnAdd.TabIndex = 11;
@@ -765,8 +793,9 @@
             this.tpSet.Controls.Add(this.txtAddress);
             this.tpSet.Controls.Add(this.dvgServer);
             this.tpSet.Location = new System.Drawing.Point(4, 29);
+            this.tpSet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpSet.Name = "tpSet";
-            this.tpSet.Padding = new System.Windows.Forms.Padding(3);
+            this.tpSet.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpSet.Size = new System.Drawing.Size(792, 358);
             this.tpSet.TabIndex = 2;
             this.tpSet.Text = "代理服务器设置";
@@ -775,7 +804,7 @@
             // lblPort
             // 
             this.lblPort.AutoSize = true;
-            this.lblPort.Location = new System.Drawing.Point(230, 3);
+            this.lblPort.Location = new System.Drawing.Point(230, 4);
             this.lblPort.Name = "lblPort";
             this.lblPort.Size = new System.Drawing.Size(39, 20);
             this.lblPort.TabIndex = 21;
@@ -784,7 +813,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(3, 3);
+            this.lblAddress.Location = new System.Drawing.Point(3, 4);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(52, 20);
             this.lblAddress.TabIndex = 20;
@@ -793,6 +822,7 @@
             // btnProxyBox
             // 
             this.btnProxyBox.Location = new System.Drawing.Point(361, 24);
+            this.btnProxyBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnProxyBox.Name = "btnProxyBox";
             this.btnProxyBox.Size = new System.Drawing.Size(94, 29);
             this.btnProxyBox.TabIndex = 19;
@@ -803,6 +833,7 @@
             // txtPort
             // 
             this.txtPort.Location = new System.Drawing.Point(230, 25);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(125, 27);
             this.txtPort.TabIndex = 18;
@@ -810,6 +841,7 @@
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(3, 26);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(221, 27);
             this.txtAddress.TabIndex = 17;
@@ -827,11 +859,12 @@
             this.tp3_c5,
             this.tp3_c6});
             this.dvgServer.Location = new System.Drawing.Point(3, 58);
+            this.dvgServer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dvgServer.Name = "dvgServer";
             this.dvgServer.RowHeadersVisible = false;
             this.dvgServer.RowHeadersWidth = 51;
             this.dvgServer.RowTemplate.Height = 29;
-            this.dvgServer.Size = new System.Drawing.Size(786, 297);
+            this.dvgServer.Size = new System.Drawing.Size(786, 296);
             this.dvgServer.TabIndex = 16;
             // 
             // tp3_c1
@@ -880,13 +913,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 449);
             this.Controls.Add(this.tctlMain);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormMain";
             this.Text = "代理猎手";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -897,7 +932,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearch)).EndInit();
             this.tpInfo.ResumeLayout(false);
             this.tpInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMessage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProxyMessage)).EndInit();
             this.tpSet.ResumeLayout(false);
             this.tpSet.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgServer)).EndInit();
@@ -960,7 +995,6 @@
         private Button btnStop;
         private Button btnStart;
         private DataGridView dgvSearch;
-        private DataGridView dgvMessage;
         private Button btnVerify;
         private Button btnExport;
         private Button btnImport;
@@ -981,17 +1015,18 @@
         private DataGridViewTextBoxColumn tp1_c3;
         private DataGridViewTextBoxColumn tp1_c4;
         private DataGridViewTextBoxColumn tp1_c5;
-        private DataGridViewTextBoxColumn tp2_c1;
-        private DataGridViewTextBoxColumn tp2_c2;
-        private DataGridViewTextBoxColumn tp2_c3;
-        private DataGridViewTextBoxColumn tp2_c4;
-        private DataGridViewTextBoxColumn tp2_c5;
-        private DataGridViewTextBoxColumn tp2_c6;
         private DataGridViewTextBoxColumn tp3_c1;
         private DataGridViewTextBoxColumn tp3_c2;
         private DataGridViewTextBoxColumn tp3_c3;
         private DataGridViewTextBoxColumn tp3_c4;
         private DataGridViewTextBoxColumn tp3_c5;
         private DataGridViewTextBoxColumn tp3_c6;
+        private DataGridViewTextBoxColumn proxy_ip;
+        private DataGridViewTextBoxColumn proxy_port;
+        private DataGridViewTextBoxColumn proxy_stutas;
+        private DataGridViewTextBoxColumn proxy_ct;
+        private DataGridViewTextBoxColumn proxy_vt;
+        private DataGridViewTextBoxColumn proxy_comments;
+        public DataGridView dgvProxyMessage;
     }
 }
