@@ -2,7 +2,7 @@
 
 namespace ClassLibrary
 {
-    public class Porxy
+    public class ClassProxy
     {
         public static string? proxyIP;
         public static string? proxyPort;
