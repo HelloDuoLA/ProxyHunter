@@ -33,7 +33,7 @@ namespace ProxyHunter
             //容许用户调整行的大小
             this.dgvProxyMessage.AllowUserToResizeRows = true;
 
-            SQLiteConnection db = Class1.CreatDataBase();
+            SQLiteConnection db = ClassProxy.CreatDataBase();
             Console.WriteLine("Reading data");
 
             SQLiteCommand dbCommand = new SQLiteCommand(db);
@@ -41,10 +41,10 @@ namespace ProxyHunter
             if (0 == Convert.ToInt32(dbCommand.ExecuteScalar<string>()))
             {
                 //table - Proxy does not exist.
-                db.CreateTable<Class1.Proxy>();
+                db.CreateTable<ClassProxy.Proxy>();
             }
        
-            var table = db.Table<Class1.Proxy>();
+            var table = db.Table<ClassProxy.Proxy>();
             foreach (var s in table)
             {
                 proxyIP = s.IP;
@@ -141,7 +141,7 @@ namespace ProxyHunter
                         proxyComments = "/";
                         dgvProxyMessage.Rows.Add(proxyIP, proxyPort, proxyStatus, proxyCT, proxyVT, proxyComments);
 
-                        var newproxy = new Class1.Proxy();
+                        var newproxy = new ClassProxy.Proxy();
                         newproxy.IP = proxyIP;
                         newproxy.Port = proxyPort;
                         newproxy.Status = proxyStatus;
@@ -214,7 +214,7 @@ namespace ProxyHunter
                         proxyComments = form.dgvMessage.Rows[i].Cells["tp_c6"].Value?.ToString();
                         dgvProxyMessage.Rows.Add(proxyIP, proxyPort, proxyStatus, proxyCT, proxyVT, proxyComments);
 
-                        var newproxy = new Class1.Proxy();
+                        var newproxy = new ClassProxy.Proxy();
                         newproxy.IP = proxyIP;
                         newproxy.Port = proxyPort;
                         newproxy.Status = proxyStatus;
@@ -256,7 +256,7 @@ namespace ProxyHunter
                 {
                     string ip = proxyMessageRow.Cells[0].Value.ToString();
                     int port = int.Parse(proxyMessageRow.Cells[1].Value.ToString());
-                    string rs = Class1.PorxyVerify(ip, port, verifyURL);
+                    string rs = ClassProxy.ProxyVerify(ip, port, verifyURL);
                     MessageBox.Show(rs);
                     if (rs != null & rs != "Error")
                     {
@@ -299,21 +299,6 @@ namespace ProxyHunter
         private void tsmiOpen_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void tsmiSet_Windows_Click(object sender, EventArgs e)
-        {
-            tctlMain.SelectedIndex = 0;
-        }
-
-        private void tsmiManageTap_Click(object sender, EventArgs e)
-        {
-            tctlMain.SelectedIndex = 1;
-        }
-
-        private void tsmiSetTap_Click(object sender, EventArgs e)
-        {
-            tctlMain.SelectedIndex = 2;
         }
 
         private void tsmiSet_Windows_Click(object sender, EventArgs e)
