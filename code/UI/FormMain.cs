@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using ClassLibrary;
+
+using Microsoft.Win32;
+using System.Runtime.InteropServices;
 namespace ProxyHunter
 {
     public partial class FormMain : Form
@@ -205,7 +208,21 @@ namespace ProxyHunter
 
         private void btnBrowser_Click(object sender, EventArgs e)
         {
-
+            foreach (DataGridViewRow proxyMessageRow in dgvProxyMessage.SelectedRows)
+            {
+                if (proxyMessageRow.Cells[2].Value.ToString() == "可用")
+                {
+                    //打开注册表键
+                    RegistryKey registry = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings", true);
+                    string Proxy = proxyMessageRow.Cells[0].Value.ToString() + ":" + proxyMessageRow.Cells[1].Value.ToString();
+                    registry.SetValue("ProxyEnable", 1);
+                    registry.SetValue("ProxyServer", Proxy);
+                    MessageBox.Show("设置代理成功！", "代理猎手", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                    MessageBox.Show("设置代理失败！", "代理猎手", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                break;
+            }
         }
 
         private void btnSearchBox_Click(object sender, EventArgs e)

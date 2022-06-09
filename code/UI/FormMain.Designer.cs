@@ -338,21 +338,21 @@
             this.tsmiSet_Windows.Name = "tsmiSet_Windows";
             this.tsmiSet_Windows.Size = new System.Drawing.Size(224, 26);
             this.tsmiSet_Windows.Text = "搜索任务";
-            this.tsmiSet_Windows.Click += new System.EventHandler(this.tsmiSet_Windows_Click);
+//            this.tsmiSet_Windows.Click += new System.EventHandler(this.tsmiSet_Windows_Click);
             // 
             // tsmiManageTap
             // 
             this.tsmiManageTap.Name = "tsmiManageTap";
             this.tsmiManageTap.Size = new System.Drawing.Size(224, 26);
             this.tsmiManageTap.Text = "代理管理";
-            this.tsmiManageTap.Click += new System.EventHandler(this.tsmiManageTap_Click);
+            //           this.tsmiManageTap.Click += new System.EventHandler(this.tsmiManageTap_Click);
             // 
             // tsmiSetTap
             // 
             this.tsmiSetTap.Name = "tsmiSetTap";
             this.tsmiSetTap.Size = new System.Drawing.Size(224, 26);
             this.tsmiSetTap.Text = "代理服务器";
-            this.tsmiSetTap.Click += new System.EventHandler(this.tsmiSetTap_Click);
+            //  this.tsmiSetTap.Click += new System.EventHandler(this.tsmiSetTap_Click);
             // 
             // tsmiHelp
             // 
