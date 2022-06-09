@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using SQLite;
 
 namespace ClassLibrary
 {
@@ -11,7 +12,7 @@ namespace ClassLibrary
         public static string? proxyVT;
         public static string? proxyComments;
 
-        public static string PorxyVerify(string IP, int port, string url)
+        public static string ProxyVerify(string IP, int port, string url)
         {
             bool isok = true;
             string? rs = null;
@@ -41,6 +42,31 @@ namespace ClassLibrary
                 }
             }
             return rs;
+        }
+
+        [Table("Proxy")]
+        public class Proxy
+        {
+            [PrimaryKey]
+            public string IP { get; set; }
+
+            public string Port { get; set; }
+
+            public string Status { get; set; }
+
+            public string CT { get; set; }
+
+            public string VT { get; set; }
+
+            public string Conmments { get; set; }
+        }
+
+        public static SQLiteConnection CreatDataBase()
+        {
+            Console.WriteLine("Creating database, if it doesn't already exist");
+            string dbPath = Path.Combine(Environment.CurrentDirectory, "ProxyHunter.db3");
+            var db = new SQLiteConnection(dbPath);
+            return db;
         }
     }
 }
