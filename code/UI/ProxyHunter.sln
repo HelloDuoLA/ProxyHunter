@@ -10,9 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TextFile1.txt = TextFile1.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "..\TestProject\TestProject.csproj", "{1D98D027-435D-435D-ABF0-BF22A03E5D0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject", "..\TestProject\TestProject.csproj", "{1D98D027-435D-435D-ABF0-BF22A03E5D0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "..\ClassLibrary\ClassLibrary.csproj", "{D07CA6C7-0819-4191-AC59-90ADBE7771EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary", "..\ClassLibrary\ClassLibrary.csproj", "{D07CA6C7-0819-4191-AC59-90ADBE7771EE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\..\..\..\Setup1\Setup1.vdproj", "{7FE4BBA6-E9F0-484A-BAED-575F77781D91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,8 @@ Global
 		{D07CA6C7-0819-4191-AC59-90ADBE7771EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D07CA6C7-0819-4191-AC59-90ADBE7771EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D07CA6C7-0819-4191-AC59-90ADBE7771EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE4BBA6-E9F0-484A-BAED-575F77781D91}.Debug|Any CPU.ActiveCfg = Debug
+		{7FE4BBA6-E9F0-484A-BAED-575F77781D91}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

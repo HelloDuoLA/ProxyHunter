@@ -195,7 +195,7 @@ namespace ProxyHunter
                 {
                     string ip = proxyMessageRow.Cells[0].Value.ToString();
                     int port = int.Parse(proxyMessageRow.Cells[1].Value.ToString());
-                    string rs = Class1.PorxyVerify(ip, port, verifyURL);
+                    string rs = Porxy.PorxyVerify(ip, port, verifyURL);
                     MessageBox.Show(rs);
                     if (rs != null & rs != "Error")
                     {

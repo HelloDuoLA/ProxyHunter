@@ -13,7 +13,7 @@ namespace TestProject
             int port = 8088;
             string url = "www.baidu.com";
 
-            string rs = Class1.PorxyVerify(IP, port, url);
+            string rs = Porxy.PorxyVerify(IP, port, url);
 
             Assert.NotEqual<string>("Error",rs);
         }
