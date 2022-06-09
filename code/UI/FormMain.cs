@@ -7,6 +7,7 @@ using ClassLibrary;
 
 using Microsoft.Win32;
 using System.Runtime.InteropServices;
+using SQLite;
 namespace ProxyHunter
 {
     public partial class FormMain : Form
@@ -32,21 +33,30 @@ namespace ProxyHunter
             //容许用户调整行的大小
             this.dgvProxyMessage.AllowUserToResizeRows = true;
 
+            SQLiteConnection db = Class1.CreatDataBase();
+            Console.WriteLine("Reading data");
 
-            DirectoryInfo directoryInfo = new DirectoryInfo(Application.StartupPath);
-            DirectoryInfo configDir = directoryInfo.Parent.Parent.Parent;
-            string[] proxyMessage = File.ReadAllLines(configDir + @"\config\proxyInitial.txt");
-            for (int i = 0; i < proxyMessage.Length; i++)
+            SQLiteCommand dbCommand = new SQLiteCommand(db);
+            dbCommand.CommandText = "SELECT COUNT(*) FROM sqlite_master where type='table' and name='Proxy';";
+            if (0 == Convert.ToInt32(dbCommand.ExecuteScalar<string>()))
             {
-                string[] strArray = proxyMessage[i].Split(new char[] { ';' });
-                proxyIP = strArray[0];
-                proxyPort = strArray[1];
-                proxyStatus = strArray[2];
-                proxyCT = strArray[3];
-                proxyVT = strArray[4];
-                proxyComments = strArray[5];
+                //table - Proxy does not exist.
+                db.CreateTable<Class1.Proxy>();
+            }
+       
+            var table = db.Table<Class1.Proxy>();
+            foreach (var s in table)
+            {
+                proxyIP = s.IP;
+                proxyPort = s.Port;
+                proxyStatus = s.Status;
+                proxyCT = s.CT;
+                proxyVT = s.VT;
+                proxyComments = s.Conmments;
+
                 dgvProxyMessage.Rows.Add(proxyIP, proxyPort, proxyStatus, proxyCT, proxyVT, proxyComments);
             }
+            db.Close();
         }
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -54,8 +64,9 @@ namespace ProxyHunter
             {
                 e.Cancel = true;
             }
-            else
+            /*else
             {
+
                 DirectoryInfo directoryInfo = new DirectoryInfo(Application.StartupPath);
                 DirectoryInfo configDir = directoryInfo.Parent.Parent.Parent;
                 string path = configDir + @"\config\proxyInitial.txt";
@@ -73,7 +84,7 @@ namespace ProxyHunter
                 }
                 sw.Close();
 
-            }
+            }*/
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -115,6 +126,11 @@ namespace ProxyHunter
             {
                 if (form.dgvAddMessage.Rows.Count > 0)
                 {
+                    /*string dbPath = Path.Combine(
+                        Environment.GetFolderPath(Environment.SpecialFolder.Personal),
+                        "ProxyHunter.db3");*/
+                    string dbPath = Path.Combine(Environment.CurrentDirectory, "ProxyHunter.db3");
+                    SQLiteConnection conn = new SQLiteConnection(dbPath);
                     for (int i = 0; i < form.dgvAddMessage.Rows.Count - 1; i++)
                     {
                         proxyIP = form.dgvAddMessage.Rows[i].Cells["proxy_ip"].Value?.ToString();
@@ -125,10 +141,19 @@ namespace ProxyHunter
                         proxyComments = "/";
                         dgvProxyMessage.Rows.Add(proxyIP, proxyPort, proxyStatus, proxyCT, proxyVT, proxyComments);
 
+                        var newproxy = new Class1.Proxy();
+                        newproxy.IP = proxyIP;
+                        newproxy.Port = proxyPort;
+                        newproxy.Status = proxyStatus;
+                        newproxy.CT = proxyCT;
+                        newproxy.VT = proxyVT;
+                        newproxy.Conmments = proxyComments;
+
+                        conn.Insert(newproxy);
                     }
+                    conn.Close();
                 }
             }
-
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -136,11 +161,31 @@ namespace ProxyHunter
             DialogResult result = MessageBox.Show("确定要删除吗？", "删除代理", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
+                /*string dbPath = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.Personal),
+                "ProxyHunter.db3");*/
+                string dbPath = Path.Combine(Environment.CurrentDirectory, "ProxyHunter.db3");
+                SQLiteConnection conn = new SQLiteConnection(dbPath);
+                
                 foreach (DataGridViewRow proxyMessageRow in dgvProxyMessage.SelectedRows)
                 {
                     dgvProxyMessage.Rows.Remove(proxyMessageRow);
-                }
+                    //int index = dgvProxyMessage.SelectedCells[0].RowIndex;
+                    //string IP = dgvProxyMessage.Rows[index].Cells[0].Value.ToString().Trim();
+                    //int indexPort = dgvProxyMessage.SelectedCells[0].RowIndex;
+                    //string port = dgvProxyMessage.Rows[indexPort].Cells[0].Value.ToString().Trim();
+                    //string port = dgvProxyMessage.Rows[index].Cells[1].Value.ToString().Trim();
+                    string IP = proxyMessageRow.Cells[0].Value.ToString();
+                    string port = proxyMessageRow.Cells[1].Value.ToString();
 
+                    string sql = "DELETE FROM Proxy WHERE IP='" + IP + "' AND Port='" + port + "'";
+                //db.Delete<Class1.Proxy>(newproxy.IP);
+                    SQLiteCommand command = new SQLiteCommand(conn);
+                    command.CommandText = sql;
+                    command.ExecuteNonQuery();
+                    //conn.Delete<Class1.Proxy>(newProxy.IP); // Id is the primary key
+                }
+                conn.Close();
             }
         }
 
@@ -153,6 +198,12 @@ namespace ProxyHunter
             {
                 if (form.dgvMessage.Rows.Count > 0)
                 {
+                    /*string dbPath = Path.Combine(
+                        Environment.GetFolderPath(Environment.SpecialFolder.Personal),
+                        "ProxyHunter.db3");*/
+                    string dbPath = Path.Combine(Environment.CurrentDirectory, "ProxyHunter.db3");
+                    SQLiteConnection conn = new SQLiteConnection(dbPath);
+
                     for (int i = 0; i < form.dgvMessage.Rows.Count - 1; i++)
                     {
                         proxyIP = form.dgvMessage.Rows[i].Cells["tp_c1"].Value?.ToString();
@@ -163,7 +214,17 @@ namespace ProxyHunter
                         proxyComments = form.dgvMessage.Rows[i].Cells["tp_c6"].Value?.ToString();
                         dgvProxyMessage.Rows.Add(proxyIP, proxyPort, proxyStatus, proxyCT, proxyVT, proxyComments);
 
+                        var newproxy = new Class1.Proxy();
+                        newproxy.IP = proxyIP;
+                        newproxy.Port = proxyPort;
+                        newproxy.Status = proxyStatus;
+                        newproxy.CT = proxyCT;
+                        newproxy.VT = proxyVT;
+                        newproxy.Conmments = proxyComments;
+                        
+                        conn.Insert(newproxy);
                     }
+                    conn.Close();
                 }
             }
         }
@@ -271,6 +332,11 @@ namespace ProxyHunter
         }
 
         private void dgvSearch_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvProxyMessage_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
