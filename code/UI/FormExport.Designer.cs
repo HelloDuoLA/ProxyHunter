@@ -43,10 +43,11 @@
             // 
             // btnAll
             // 
-            this.btnAll.Location = new System.Drawing.Point(9, 348);
-            this.btnAll.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAll.Location = new System.Drawing.Point(3, 412);
+            this.btnAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAll.Name = "btnAll";
-            this.btnAll.Size = new System.Drawing.Size(73, 25);
+            this.btnAll.Size = new System.Drawing.Size(94, 29);
             this.btnAll.TabIndex = 29;
             this.btnAll.Text = "全选";
             this.btnAll.UseVisualStyleBackColor = true;
@@ -54,10 +55,11 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(87, 348);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnConfirm.Location = new System.Drawing.Point(103, 412);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(73, 25);
+            this.btnConfirm.Size = new System.Drawing.Size(94, 29);
             this.btnConfirm.TabIndex = 28;
             this.btnConfirm.Text = "确定";
             this.btnConfirm.UseVisualStyleBackColor = true;
@@ -65,10 +67,11 @@
             // 
             // btnCancle
             // 
-            this.btnCancle.Location = new System.Drawing.Point(165, 348);
-            this.btnCancle.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnCancle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCancle.Location = new System.Drawing.Point(203, 412);
+            this.btnCancle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(73, 25);
+            this.btnCancle.Size = new System.Drawing.Size(94, 29);
             this.btnCancle.TabIndex = 27;
             this.btnCancle.Text = "取消";
             this.btnCancle.UseVisualStyleBackColor = true;
@@ -76,6 +79,9 @@
             // 
             // dgvMessage
             // 
+            this.dgvMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvMessage.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMessage.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvMessage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -86,13 +92,13 @@
             this.tp_c4,
             this.tp_c5,
             this.tp_c6});
-            this.dgvMessage.Location = new System.Drawing.Point(2, 3);
-            this.dgvMessage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvMessage.Location = new System.Drawing.Point(3, 4);
+            this.dgvMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvMessage.Name = "dgvMessage";
             this.dgvMessage.RowHeadersVisible = false;
             this.dgvMessage.RowHeadersWidth = 51;
             this.dgvMessage.RowTemplate.Height = 29;
-            this.dgvMessage.Size = new System.Drawing.Size(619, 340);
+            this.dgvMessage.Size = new System.Drawing.Size(796, 400);
             this.dgvMessage.TabIndex = 26;
             // 
             // tp_c1
@@ -133,18 +139,19 @@
             // tp_c6
             // 
             this.tp_c6.HeaderText = "备注";
+            this.tp_c6.MinimumWidth = 6;
             this.tp_c6.Name = "tp_c6";
             // 
             // FormExport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 382);
+            this.ClientSize = new System.Drawing.Size(800, 449);
             this.Controls.Add(this.btnAll);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.dgvMessage);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormExport";
             this.Text = "导出代理";
             ((System.ComponentModel.ISupportInitialize)(this.dgvMessage)).EndInit();

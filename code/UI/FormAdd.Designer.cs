@@ -43,19 +43,22 @@
             // 
             // dgvAddMessage
             // 
+            this.dgvAddMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvAddMessage.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAddMessage.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvAddMessage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAddMessage.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.proxy_ip,
             this.proxy_port});
-            this.dgvAddMessage.Location = new System.Drawing.Point(2, 68);
-            this.dgvAddMessage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvAddMessage.Location = new System.Drawing.Point(3, 68);
+            this.dgvAddMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvAddMessage.Name = "dgvAddMessage";
             this.dgvAddMessage.RowHeadersVisible = false;
             this.dgvAddMessage.RowHeadersWidth = 51;
             this.dgvAddMessage.RowTemplate.Height = 29;
-            this.dgvAddMessage.Size = new System.Drawing.Size(619, 312);
+            this.dgvAddMessage.Size = new System.Drawing.Size(796, 342);
             this.dgvAddMessage.TabIndex = 18;
             // 
             // proxy_ip
@@ -74,10 +77,11 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(2, 355);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnConfirm.Location = new System.Drawing.Point(3, 418);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(73, 25);
+            this.btnConfirm.Size = new System.Drawing.Size(94, 29);
             this.btnConfirm.TabIndex = 21;
             this.btnConfirm.Text = "确定";
             this.btnConfirm.UseVisualStyleBackColor = true;
@@ -85,10 +89,11 @@
             // 
             // btnCancle
             // 
-            this.btnCancle.Location = new System.Drawing.Point(79, 355);
-            this.btnCancle.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnCancle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCancle.Location = new System.Drawing.Point(102, 418);
+            this.btnCancle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(73, 25);
+            this.btnCancle.Size = new System.Drawing.Size(94, 29);
             this.btnCancle.TabIndex = 20;
             this.btnCancle.Text = "取消";
             this.btnCancle.UseVisualStyleBackColor = true;
@@ -97,46 +102,49 @@
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(9, 13);
-            this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl1.Location = new System.Drawing.Point(3, 9);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(43, 17);
+            this.lbl1.Size = new System.Drawing.Size(53, 20);
             this.lbl1.TabIndex = 22;
             this.lbl1.Text = "ip地址";
             // 
             // lbl2
             // 
+            this.lbl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(275, 13);
-            this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl2.Location = new System.Drawing.Point(564, 9);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(32, 17);
+            this.lbl2.Size = new System.Drawing.Size(39, 20);
             this.lbl2.TabIndex = 23;
             this.lbl2.Text = "端口";
             // 
             // IPAddress
             // 
-            this.IPAddress.Location = new System.Drawing.Point(54, 10);
-            this.IPAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.IPAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.IPAddress.Location = new System.Drawing.Point(3, 33);
+            this.IPAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.IPAddress.Name = "IPAddress";
-            this.IPAddress.Size = new System.Drawing.Size(188, 23);
+            this.IPAddress.Size = new System.Drawing.Size(555, 27);
             this.IPAddress.TabIndex = 24;
             // 
             // port
             // 
-            this.port.Location = new System.Drawing.Point(311, 10);
-            this.port.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.port.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.port.Location = new System.Drawing.Point(564, 33);
+            this.port.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.port.Name = "port";
-            this.port.Size = new System.Drawing.Size(97, 23);
+            this.port.Size = new System.Drawing.Size(124, 27);
             this.port.TabIndex = 25;
             this.port.Text = " ";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(484, 9);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.Location = new System.Drawing.Point(694, 32);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(73, 25);
+            this.btnAdd.Size = new System.Drawing.Size(94, 29);
             this.btnAdd.TabIndex = 26;
             this.btnAdd.Text = "添加";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -144,9 +152,9 @@
             // 
             // FormAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 382);
+            this.ClientSize = new System.Drawing.Size(800, 449);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.port);
             this.Controls.Add(this.IPAddress);
@@ -155,7 +163,7 @@
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.dgvAddMessage);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormAdd";
             this.Text = "增加代理";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAddMessage)).EndInit();

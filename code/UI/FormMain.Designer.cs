@@ -336,23 +336,20 @@
             // tsmiSet_Windows
             // 
             this.tsmiSet_Windows.Name = "tsmiSet_Windows";
-            this.tsmiSet_Windows.Size = new System.Drawing.Size(224, 26);
+            this.tsmiSet_Windows.Size = new System.Drawing.Size(167, 26);
             this.tsmiSet_Windows.Text = "搜索任务";
-//            this.tsmiSet_Windows.Click += new System.EventHandler(this.tsmiSet_Windows_Click);
             // 
             // tsmiManageTap
             // 
             this.tsmiManageTap.Name = "tsmiManageTap";
-            this.tsmiManageTap.Size = new System.Drawing.Size(224, 26);
+            this.tsmiManageTap.Size = new System.Drawing.Size(167, 26);
             this.tsmiManageTap.Text = "代理管理";
-            //           this.tsmiManageTap.Click += new System.EventHandler(this.tsmiManageTap_Click);
             // 
             // tsmiSetTap
             // 
             this.tsmiSetTap.Name = "tsmiSetTap";
-            this.tsmiSetTap.Size = new System.Drawing.Size(224, 26);
+            this.tsmiSetTap.Size = new System.Drawing.Size(167, 26);
             this.tsmiSetTap.Text = "代理服务器";
-            //  this.tsmiSetTap.Click += new System.EventHandler(this.tsmiSetTap_Click);
             // 
             // tsmiHelp
             // 
@@ -551,10 +548,11 @@
             // 
             // btnResult
             // 
-            this.btnResult.Location = new System.Drawing.Point(406, 326);
+            this.btnResult.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnResult.Location = new System.Drawing.Point(404, 324);
             this.btnResult.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnResult.Name = "btnResult";
-            this.btnResult.Size = new System.Drawing.Size(94, 29);
+            this.btnResult.Size = new System.Drawing.Size(94, 30);
             this.btnResult.TabIndex = 9;
             this.btnResult.Text = "搜索结果";
             this.btnResult.UseVisualStyleBackColor = true;
@@ -562,10 +560,11 @@
             // 
             // btnEnd
             // 
-            this.btnEnd.Location = new System.Drawing.Point(306, 326);
+            this.btnEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnEnd.Location = new System.Drawing.Point(304, 324);
             this.btnEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEnd.Name = "btnEnd";
-            this.btnEnd.Size = new System.Drawing.Size(94, 29);
+            this.btnEnd.Size = new System.Drawing.Size(94, 30);
             this.btnEnd.TabIndex = 8;
             this.btnEnd.Text = "结束搜索";
             this.btnEnd.UseVisualStyleBackColor = true;
@@ -573,10 +572,11 @@
             // 
             // btnContinue
             // 
-            this.btnContinue.Location = new System.Drawing.Point(206, 326);
+            this.btnContinue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnContinue.Location = new System.Drawing.Point(204, 324);
             this.btnContinue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(94, 29);
+            this.btnContinue.Size = new System.Drawing.Size(94, 30);
             this.btnContinue.TabIndex = 7;
             this.btnContinue.Text = "继续搜索";
             this.btnContinue.UseVisualStyleBackColor = true;
@@ -584,10 +584,11 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(105, 326);
+            this.btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnStop.Location = new System.Drawing.Point(103, 324);
             this.btnStop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(94, 29);
+            this.btnStop.Size = new System.Drawing.Size(94, 30);
             this.btnStop.TabIndex = 6;
             this.btnStop.Text = "暂停搜索";
             this.btnStop.UseVisualStyleBackColor = true;
@@ -595,10 +596,11 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(6, 326);
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnStart.Location = new System.Drawing.Point(6, 324);
             this.btnStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(94, 29);
+            this.btnStart.Size = new System.Drawing.Size(94, 30);
             this.btnStart.TabIndex = 5;
             this.btnStart.Text = "开始搜索";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -627,6 +629,8 @@
             // 
             // txtSearch
             // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.Location = new System.Drawing.Point(63, 6);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
@@ -635,10 +639,11 @@
             // 
             // btnSearchBox
             // 
+            this.btnSearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSearchBox.Location = new System.Drawing.Point(699, 5);
             this.btnSearchBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchBox.Name = "btnSearchBox";
-            this.btnSearchBox.Size = new System.Drawing.Size(85, 29);
+            this.btnSearchBox.Size = new System.Drawing.Size(85, 30);
             this.btnSearchBox.TabIndex = 19;
             this.btnSearchBox.Text = "确定";
             this.btnSearchBox.UseVisualStyleBackColor = true;
@@ -646,6 +651,8 @@
             // 
             // lblSearch
             // 
+            this.lblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSearch.AutoSize = true;
             this.lblSearch.Location = new System.Drawing.Point(4, 9);
             this.lblSearch.Name = "lblSearch";
@@ -655,6 +662,7 @@
             // 
             // btnBrowser
             // 
+            this.btnBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnBrowser.Location = new System.Drawing.Point(507, 326);
             this.btnBrowser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBrowser.Name = "btnBrowser";
@@ -731,6 +739,7 @@
             // 
             // btnVerify
             // 
+            this.btnVerify.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnVerify.Location = new System.Drawing.Point(406, 326);
             this.btnVerify.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnVerify.Name = "btnVerify";
@@ -742,6 +751,7 @@
             // 
             // btnExport
             // 
+            this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnExport.Location = new System.Drawing.Point(306, 326);
             this.btnExport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExport.Name = "btnExport";
@@ -753,6 +763,7 @@
             // 
             // btnImport
             // 
+            this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnImport.Location = new System.Drawing.Point(206, 326);
             this.btnImport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnImport.Name = "btnImport";
@@ -764,6 +775,7 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnDelete.Location = new System.Drawing.Point(105, 326);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
@@ -775,6 +787,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnAdd.Location = new System.Drawing.Point(6, 326);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
@@ -803,8 +816,9 @@
             // 
             // lblPort
             // 
+            this.lblPort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPort.AutoSize = true;
-            this.lblPort.Location = new System.Drawing.Point(230, 4);
+            this.lblPort.Location = new System.Drawing.Point(559, 4);
             this.lblPort.Name = "lblPort";
             this.lblPort.Size = new System.Drawing.Size(39, 20);
             this.lblPort.TabIndex = 21;
@@ -821,7 +835,8 @@
             // 
             // btnProxyBox
             // 
-            this.btnProxyBox.Location = new System.Drawing.Point(361, 24);
+            this.btnProxyBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProxyBox.Location = new System.Drawing.Point(690, 26);
             this.btnProxyBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnProxyBox.Name = "btnProxyBox";
             this.btnProxyBox.Size = new System.Drawing.Size(94, 29);
@@ -832,7 +847,8 @@
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(230, 25);
+            this.txtPort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPort.Location = new System.Drawing.Point(559, 26);
             this.txtPort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(125, 27);
@@ -840,14 +856,19 @@
             // 
             // txtAddress
             // 
+            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAddress.Location = new System.Drawing.Point(3, 26);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(221, 27);
+            this.txtAddress.Size = new System.Drawing.Size(550, 27);
             this.txtAddress.TabIndex = 17;
             // 
             // dvgServer
             // 
+            this.dvgServer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dvgServer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dvgServer.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dvgServer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

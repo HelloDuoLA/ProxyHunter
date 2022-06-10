@@ -36,7 +36,8 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(600, 16);
+            this.btnConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnConfirm.Location = new System.Drawing.Point(12, 122);
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(94, 29);
@@ -47,7 +48,8 @@
             // 
             // btnCancle
             // 
-            this.btnCancle.Location = new System.Drawing.Point(600, 89);
+            this.btnCancle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCancle.Location = new System.Drawing.Point(112, 122);
             this.btnCancle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancle.Name = "btnCancle";
             this.btnCancle.Size = new System.Drawing.Size(94, 29);
@@ -58,10 +60,11 @@
             // 
             // VerifyURL
             // 
+            this.VerifyURL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.VerifyURL.Location = new System.Drawing.Point(202, 16);
-            this.VerifyURL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.VerifyURL.Margin = new System.Windows.Forms.Padding(4);
             this.VerifyURL.Name = "VerifyURL";
-            this.VerifyURL.Size = new System.Drawing.Size(310, 27);
+            this.VerifyURL.Size = new System.Drawing.Size(546, 27);
             this.VerifyURL.TabIndex = 30;
             this.VerifyURL.Text = "http://";
             this.VerifyURL.TextChanged += new System.EventHandler(this.VerifyURL_TextChanged);
