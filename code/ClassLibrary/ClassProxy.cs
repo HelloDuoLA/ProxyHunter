@@ -47,7 +47,6 @@ namespace ClassLibrary
         [Table("Proxy")]
         public class Proxy
         {
-            [PrimaryKey]
             public string IP { get; set; }
 
             public string Port { get; set; }

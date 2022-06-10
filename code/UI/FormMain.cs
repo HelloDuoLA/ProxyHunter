@@ -141,7 +141,7 @@ namespace ProxyHunter
                         proxyComments = "/";
                         dgvProxyMessage.Rows.Add(proxyIP, proxyPort, proxyStatus, proxyCT, proxyVT, proxyComments);
 
-                        var newproxy = new ClassProxy.Proxy();
+                        ClassProxy.Proxy newproxy = new ClassProxy.Proxy();
                         newproxy.IP = proxyIP;
                         newproxy.Port = proxyPort;
                         newproxy.Status = proxyStatus;
@@ -214,7 +214,7 @@ namespace ProxyHunter
                         proxyComments = form.dgvMessage.Rows[i].Cells["tp_c6"].Value?.ToString();
                         dgvProxyMessage.Rows.Add(proxyIP, proxyPort, proxyStatus, proxyCT, proxyVT, proxyComments);
 
-                        var newproxy = new ClassProxy.Proxy();
+                        ClassProxy.Proxy newproxy = new ClassProxy.Proxy();
                         newproxy.IP = proxyIP;
                         newproxy.Port = proxyPort;
                         newproxy.Status = proxyStatus;
