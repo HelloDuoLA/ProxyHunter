@@ -1,5 +1,5 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+这是暨南大学珠海校区 2022年第二学期团队开发课程代理猎手开发项目第7组的源码
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
